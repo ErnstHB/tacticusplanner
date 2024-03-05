@@ -8228,6 +8228,9 @@
         "campaignType": "Mirror",
         "nodeNumber": 60,
         "reward": "Jain Zar",
-        "expectedGold": 53
+        "expectedGold": 65,
+        "deployable": 5,
+        "totalEnemyPower": 1548,
+        "skulls": 1
     }
 }
