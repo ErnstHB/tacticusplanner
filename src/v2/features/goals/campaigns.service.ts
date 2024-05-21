@@ -65,6 +65,7 @@ export class CampaignsService {
                 reward: battle.reward,
                 expectedGold: battle.expectedGold,
                 slots: battle.slots,
+                totalEnemyPower: battle.totalEnemyPower,
                 enemiesAlliances: (battle.enemiesAlliances ?? [enemies.alliance]) as Alliance[],
                 enemiesFactions: (battle.enemiesFactions ?? enemies.factions) as Faction[],
                 alliesAlliance: allies.alliance,

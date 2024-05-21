@@ -581,9 +581,7 @@ export interface ICampaignBattle {
     slots?: number;
     enemiesAlliances?: string[];
     enemiesFactions?: string[];
-    deployable: number;
     totalEnemyPower: number;
-    skulls: number;
 }
 
 export interface ICampaignBattleComposed {
@@ -611,9 +609,7 @@ export interface ICampaignBattleComposed {
     isUnlocked?: boolean;
     isPassFilter?: boolean;
     isCompleted?: boolean;
-    deployable: number;
     totalEnemyPower: number;
-    skulls: number;
 }
 
 type MaterialName = string;

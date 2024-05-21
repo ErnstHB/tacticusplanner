@@ -104,22 +104,8 @@ export const Campaigns = () => {
             minWidth: 150,
         },
         {
-            field: 'deployable',
-            headerName: 'Spawnpoints',
-            maxWidth: 150,
-            width: 150,
-            minWidth: 150,
-        },
-        {
             field: 'totalEnemyPower',
             headerName: 'Enemy Power',
-            maxWidth: 150,
-            width: 150,
-            minWidth: 150,
-        },
-        {
-            field: 'skulls',
-            headerName: 'Mission Difficulty',
             maxWidth: 150,
             width: 150,
             minWidth: 150,
