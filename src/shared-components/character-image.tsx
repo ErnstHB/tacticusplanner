@@ -1,32 +1,21 @@
 ﻿import React from 'react';
 import { getImageUrl } from '../shared-logic/functions';
+import { AccessibleTooltip } from 'src/v2/components/tooltip';
 
 export const CharacterImage = ({
     icon,
     name,
     imageSize,
-    portrait,
+    tooltip,
 }: {
     icon: string;
     name?: string;
+    tooltip?: string;
     imageSize?: number;
-    portrait?: boolean;
 }) => {
-    const iconPath = portrait ? 'portraits/webp' : 'characters';
-    const replaceExtenstion = portrait ? icon.replace('.png', '.webp') : icon;
-    const unset = portrait ? 'unset.webp' : 'unset.png';
+    const imageUrl = getImageUrl(`characters/${icon.replace('.webp', '.png')}`);
 
-    const imageUrl = getImageUrl(`${iconPath}/${replaceExtenstion}`);
-
-    return portrait ? (
-        <img
-            loading={'lazy'}
-            style={{ pointerEvents: 'none', contentVisibility: 'auto' }}
-            src={imageUrl}
-            width={60}
-            alt={name ?? icon}
-        />
-    ) : (
+    const image = (
         <img
             loading={'lazy'}
             style={{ pointerEvents: 'none', borderRadius: '50%' }}
@@ -35,4 +24,6 @@ export const CharacterImage = ({
             alt={name ?? icon}
         />
     );
+
+    return tooltip ? <AccessibleTooltip title={tooltip}>{image}</AccessibleTooltip> : image;
 };

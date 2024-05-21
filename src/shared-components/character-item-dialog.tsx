@@ -12,10 +12,14 @@ import { CharactersValueService } from 'src/v2/features/characters/characters-va
 import { ICharacter2, IMaterialRecipeIngredientFull } from '../models/interfaces';
 import { CharacterTitle } from './character-title';
 import { CharacterDetails } from '../mobile-routes/characters/character-details';
-import { DispatchContext } from '../reducers/store.provider';
+import { DispatchContext, StoreContext } from '../reducers/store.provider';
 import { MiscIcon } from './misc-icon';
+import { Conditional } from 'src/v2/components/conditional';
+import { numberToThousandsString, numberToThousandsStringOld } from 'src/v2/functions/number-to-thousands-string';
+import { AccessibleTooltip } from 'src/v2/components/tooltip';
 
 export const CharacterItemDialog = (props: { character: ICharacter2; isOpen: boolean; onClose: () => void }) => {
+    const { viewPreferences } = useContext(StoreContext);
     const [character, setCharacter] = useState(() => ({ ...props.character }));
     const [inventoryUpdate, setInventoryUpdate] = useState<IMaterialRecipeIngredientFull[]>([]);
 
@@ -30,6 +34,9 @@ export const CharacterItemDialog = (props: { character: ICharacter2; isOpen: boo
         }
     };
 
+    const power = CharactersPowerService.getCharacterPower(character);
+    const bsValue = CharactersValueService.getCharacterValue(character);
+
     return (
         <Dialog open={props.isOpen} onClose={props.onClose} fullScreen={isMobile}>
             <DialogTitle>
@@ -41,23 +48,28 @@ export const CharacterItemDialog = (props: { character: ICharacter2; isOpen: boo
                         justifyContent: 'space-between',
                     }}>
                     <CharacterTitle character={character} />
-                    <div style={{ display: 'flex' }}>
-                        <MiscIcon icon={'blackstone'} height={20} width={15} />{' '}
-                        {CharactersValueService.getCharacterValue(character).toLocaleString().replace(/,/g, ' ')}
-                    </div>
-                    <div style={{ display: 'flex' }}>
-                        <MiscIcon icon={'power'} height={20} width={15} />{' '}
-                        {CharactersPowerService.getCharacterPower(character).toLocaleString().replace(/,/g, ' ')}
-                    </div>
+                    <Conditional condition={viewPreferences.showBsValue}>
+                        <AccessibleTooltip title={numberToThousandsStringOld(bsValue)}>
+                            <div style={{ display: 'flex' }}>
+                                <MiscIcon icon={'blackstone'} height={20} width={15} />{' '}
+                                {numberToThousandsString(bsValue)}
+                            </div>
+                        </AccessibleTooltip>
+                    </Conditional>
+                    <Conditional condition={viewPreferences.showPower}>
+                        <AccessibleTooltip title={numberToThousandsStringOld(power)}>
+                            <div style={{ display: 'flex' }}>
+                                <MiscIcon icon={'power'} height={20} width={15} /> {numberToThousandsString(power)}
+                            </div>
+                        </AccessibleTooltip>
+                    </Conditional>
                 </div>
             </DialogTitle>
             <DialogContent style={{ paddingTop: 20 }}>
                 <CharacterDetails
                     character={character}
-                    characterChanges={(character, updateInventory) => {
-                        setCharacter(character);
-                        setInventoryUpdate(updateInventory);
-                    }}
+                    updateInventoryChanges={setInventoryUpdate}
+                    characterChanges={setCharacter}
                 />
             </DialogContent>
             <DialogActions>

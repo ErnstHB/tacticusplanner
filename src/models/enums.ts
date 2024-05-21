@@ -25,10 +25,10 @@ export enum Faction {
 
 export enum RarityString {
     Common = 'Common',
+    Uncommon = 'Uncommon',
+    Rare = 'Rare',
     Epic = 'Epic',
     Legendary = 'Legendary',
-    Rare = 'Rare',
-    Uncommon = 'Uncommon',
 }
 
 export enum Rarity {
@@ -61,6 +61,14 @@ export enum RarityStars {
     RedFourStars,
     RedFiveStars,
     BlueStar,
+}
+
+export enum Difficulty {
+    None,
+    Easy,
+    Normal,
+    Hard,
+    VeryHard,
 }
 
 export enum Equipment {
@@ -107,6 +115,7 @@ export enum Trait {
     SuppressiveFire = 'Suppressive Fire',
     CrushingStrike = 'Crushing Strike',
     RapidAssault = 'Rapid Assault',
+    GetStuckIn = 'Get Stuck In',
 }
 
 export enum DamageType {
@@ -128,6 +137,7 @@ export enum DamageType {
     Direct = 'Direct',
     Pulse = 'Pulse',
     Melta = 'Melta',
+    Eviscerate = 'Eviscerate',
 }
 
 export enum Rank {
@@ -165,6 +175,7 @@ export enum LegendaryEventEnum {
     Shadowsun = 4,
     Ragnar = 5,
     Vitruvius = 6,
+    Kharn = 7,
 }
 
 export enum PersonalGoalType {
@@ -172,6 +183,12 @@ export enum PersonalGoalType {
     UpgradeRank = 1,
     Ascend = 2,
     Unlock = 3,
+}
+
+export enum CampaignsLocationsUsage {
+    None = 0,
+    BestTime = 1,
+    LeastEnergy = 2,
 }
 
 export enum CharacterBias {
@@ -187,11 +204,32 @@ export enum CampaignType {
     Normal = 'Normal',
     Mirror = 'Mirror',
     Elite = 'Elite',
+    Onslaught = 'Onslaught',
 }
 
 export enum Campaign {
-    Indomitus = 'Indomitus',
-    FallOfCadia = 'Fall of Cadia',
-    Octarius = 'Octarius',
-    SaimHann = 'Saim-Hann',
+    I = 'Indomitus',
+    IE = 'Indomitus Elite',
+    IM = 'Indomitus Mirror',
+    IME = 'Indomitus Mirror Elite',
+    FoC = 'Fall of Cadia',
+    FoCE = 'Fall of Cadia Elite',
+    FoCM = 'Fall of Cadia Mirror',
+    FoCME = 'Fall of Cadia Mirror Elite',
+    O = 'Octarius',
+    OE = 'Octarius Elite',
+    OM = 'Octarius Mirror',
+    OME = 'Octarius Mirror Elite',
+    SH = 'Saim-Hann',
+    SHE = 'Saim-Hann Elite',
+    SHM = 'Saim-Hann Mirror',
+    SHME = 'Saim-Hann Mirror Elite',
+    Onslaught = 'Onslaught',
+}
+
+export enum DailyRaidsStrategy {
+    leastEnergy,
+    leastTime,
+    allLocations,
+    custom,
 }

@@ -2,8 +2,8 @@
 import { Box, Grid, Input, Slider } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import { DispatchContext, StoreContext } from '../reducers/store.provider';
-import { CampaignImage } from '../shared-components/campaign-image';
 import { campaignsNames } from '../models/constants';
+import { CampaignImage } from 'src/v2/components/images/campaign-image';
 
 export const CampaignsProgress = () => {
     const { campaignsProgress } = useContext(StoreContext);
@@ -69,7 +69,7 @@ export const CampaignProgress = ({
     };
 
     return (
-        <Box sx={{ width: 250 }}>
+        <Box sx={{ width: 250, opacity: value === max ? 0.5 : 1 }}>
             <Typography id="input-slider" gutterBottom>
                 <CampaignImage campaign={campaign} /> {campaign}
             </Typography>

@@ -1,4 +1,4 @@
-﻿import React, { useMemo } from 'react';
+﻿import React, { useContext, useMemo } from 'react';
 import { Badge, Tooltip } from '@mui/material';
 
 import { CharacterPortraitImage } from 'src/v2/components/images/character-portrait.image';
@@ -13,13 +13,24 @@ import { needToAscendCharacter, needToLevelCharacter } from 'src/shared-logic/fu
 
 import './character-tile.css';
 import { Conditional } from 'src/v2/components/conditional';
+import { CharactersViewContext } from 'src/v2/features/characters/characters-view.context';
+import { AccessibleTooltip } from 'src/v2/components/tooltip';
+
+import { numberToThousandsStringOld } from 'src/v2/functions/number-to-thousands-string';
+import { CharactersPowerService } from 'src/v2/features/characters/characters-power.service';
+import { CharactersValueService } from 'src/v2/features/characters/characters-value.service';
+
 export const CharacterTile = ({
     character,
-    onClick,
+    disableClick,
+    onCharacterClick,
 }: {
     character: ICharacter2;
-    onClick?: (character: ICharacter2) => void;
+    onCharacterClick?: (character: ICharacter2) => void;
+    disableClick?: boolean;
 }) => {
+    const viewContext = useContext(CharactersViewContext);
+
     const isUnlocked = character.rank > Rank.Locked;
     const isReleased = !character.releaseRarity;
     const unlockShards = isReleased
@@ -49,38 +60,70 @@ export const CharacterTile = ({
     return (
         <div
             className="character-tile"
-            style={{ opacity: isUnlocked ? 1 : 0.5, cursor: onClick ? 'pointer' : undefined }}
-            onClick={onClick ? () => onClick(character) : undefined}>
+            style={{
+                opacity: viewContext.getOpacity ? viewContext.getOpacity(character) : isUnlocked ? 1 : 0.5,
+                cursor: onCharacterClick && !disableClick ? 'pointer' : undefined,
+            }}
+            onClick={onCharacterClick && !disableClick ? () => onCharacterClick!(character) : undefined}>
             <StarsImage stars={character.stars} />
             <div>
-                <Tooltip title={character.name} placement={'top'}>
-                    <Badge badgeContent={badgeContent} color={badgeColor}>
+                <Tooltip
+                    placement={'top'}
+                    title={
+                        <span>
+                            {character.name}
+                            <br />
+                            Power: {numberToThousandsStringOld(CharactersPowerService.getCharacterPower(character))}
+                            <br />
+                            Blackstone:{' '}
+                            {numberToThousandsStringOld(CharactersValueService.getCharacterValue(character))}
+                        </span>
+                    }>
+                    <Badge badgeContent={badgeContent} color={badgeColor} invisible={!viewContext.showBadges}>
                         <CharacterPortraitImage icon={character.icon} />
                     </Badge>
                 </Tooltip>
 
-                <div className="abilities" style={{ visibility: hasAbilities ? 'visible' : 'hidden' }}>
+                <div
+                    className="abilities"
+                    style={{ visibility: hasAbilities && viewContext.showAbilities ? 'visible' : 'hidden' }}>
                     <div className="ability-level">{character.activeAbilityLevel}</div>
                     <div className="ability-level">{character.passiveAbilityLevel}</div>
                 </div>
-                {isUnlocked ? (
-                    <div className="character-level">{character.level}</div>
-                ) : (
-                    <div
-                        className="character-level"
-                        style={{
-                            background: `linear-gradient(to right, green ${unlockProgress}%, #012A41 ${unlockProgress}%)`,
-                        }}>
-                        {`${character.shards}/${unlockShards}`}
-                    </div>
-                )}
+                <Conditional condition={viewContext.showCharacterLevel}>
+                    {isUnlocked ? (
+                        <div className="character-level">{character.level}</div>
+                    ) : (
+                        <div
+                            className="character-level"
+                            style={{
+                                background: `linear-gradient(to right, green ${unlockProgress}%, #012A41 ${unlockProgress}%)`,
+                            }}>
+                            {`${character.shards}/${unlockShards}`}
+                        </div>
+                    )}
+                </Conditional>
             </div>
             <div className="character-rarity-rank">
-                <RarityImage rarity={character.rarity} />
+                {viewContext.showCharacterRarity && <RarityImage rarity={character.rarity} />}
                 {isUnlocked && <RankImage rank={character.rank} />}
             </div>
             <Conditional condition={!!character.numberOfUnlocked}>
-                <Tooltip title={`${character.numberOfUnlocked}% of players unlocked this character`} placement={'top'}>
+                <AccessibleTooltip
+                    title={
+                        !character.ownedBy?.length ? (
+                            `${character.numberOfUnlocked}% of players unlocked this character`
+                        ) : (
+                            <div>
+                                ${character.numberOfUnlocked}% of players unlocked this character:
+                                <ul>
+                                    {character.ownedBy.map(username => (
+                                        <li key={username}>{username}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )
+                    }>
                     <div
                         className="character-unlock"
                         style={{
@@ -88,7 +131,7 @@ export const CharacterTile = ({
                         }}>
                         {`${character.numberOfUnlocked}%`}
                     </div>
-                </Tooltip>
+                </AccessibleTooltip>
             </Conditional>
         </div>
     );

@@ -1,5 +1,5 @@
-﻿import { Tooltip } from '@mui/material';
-import React from 'react';
+﻿import React from 'react';
+import { AccessibleTooltip } from 'src/v2/components/tooltip';
 import { Rarity } from '../models/enums';
 import { getImageUrl } from '../shared-logic/functions';
 
@@ -8,11 +8,13 @@ export const UpgradeImage = ({
     iconPath,
     rarity,
     size,
+    tooltip,
 }: {
     material: string;
     iconPath: string;
     rarity: Rarity;
     size?: number;
+    tooltip?: React.ReactNode;
 }) => {
     try {
         // const
@@ -20,7 +22,7 @@ export const UpgradeImage = ({
         const image = getImageUrl(`upgrades/${imagePath}`);
 
         return (
-            <Tooltip title={material} enterTouchDelay={0} placement={'top'}>
+            <AccessibleTooltip title={tooltip ?? material}>
                 <div
                     style={{ width: size ?? 50, height: size ?? 50 }}
                     className={Rarity[rarity]?.toLowerCase() + '-upgrade upgrade'}>
@@ -33,14 +35,13 @@ export const UpgradeImage = ({
                         alt={material}
                     />
                 </div>
-            </Tooltip>
+            </AccessibleTooltip>
         );
     } catch (error) {
-        // console.log(`Image for "${material}" with path "${iconPath}" does not exist`);
         return (
-            <Tooltip title={material} enterTouchDelay={0} placement={'top'}>
+            <AccessibleTooltip title={material}>
                 <div>{material}</div>
-            </Tooltip>
+            </AccessibleTooltip>
         );
     }
 };

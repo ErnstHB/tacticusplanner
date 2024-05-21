@@ -135,6 +135,7 @@
         "nodeNumber": 28,
         "reward": "Pile of Salvage",
         "expectedGold": 12.5,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 204,
         "skulls": 1
@@ -215,6 +216,7 @@
         "nodeNumber": 36,
         "reward": "Locator Beacon",
         "expectedGold": 15,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 330,
         "skulls": 1
@@ -245,6 +247,7 @@
         "nodeNumber": 39,
         "reward": "Standard-Issue Tourniquet",
         "expectedGold": 15,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 369,
         "skulls": 1
@@ -275,6 +278,7 @@
         "nodeNumber": 42,
         "reward": "Plasma Cell",
         "expectedGold": 15,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 574,
         "skulls": 1
@@ -335,6 +339,7 @@
         "nodeNumber": 48,
         "reward": "Adamantium Ore",
         "expectedGold": 17.5,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 784,
         "skulls": 1
@@ -395,6 +400,7 @@
         "nodeNumber": 54,
         "reward": "Barrel of Promethium",
         "expectedGold": 17.5,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 1039,
         "skulls": 1
@@ -405,6 +411,7 @@
         "nodeNumber": 55,
         "reward": "Single Power Pack",
         "expectedGold": 17.5,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 1252,
         "skulls": 1
@@ -435,6 +442,7 @@
         "nodeNumber": 58,
         "reward": "Reliquary of Protection",
         "expectedGold": 17.5,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 1182,
         "skulls": 1
@@ -475,6 +483,7 @@
         "nodeNumber": 62,
         "reward": "Tank of Promethium",
         "expectedGold": 20,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 1365,
         "skulls": 1
@@ -515,6 +524,7 @@
         "nodeNumber": 66,
         "reward": "Mutation: Scaly Skin",
         "expectedGold": 20,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 2056,
         "skulls": 1
@@ -545,6 +555,7 @@
         "nodeNumber": 69,
         "reward": "The Silver Eagle with Swords",
         "expectedGold": 20,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 2272,
         "skulls": 1
@@ -575,6 +586,7 @@
         "nodeNumber": 72,
         "reward": "Targeting Link",
         "expectedGold": 20,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 2753,
         "skulls": 1
@@ -615,6 +627,7 @@
         "nodeNumber": 1,
         "reward": "Mutation: Warped Muscles",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 96,
         "skulls": 1
@@ -625,6 +638,7 @@
         "nodeNumber": 10,
         "reward": "Minor Bionic Enhancement",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 265,
         "skulls": 1
@@ -635,6 +649,7 @@
         "nodeNumber": 11,
         "reward": "Crate of Salvage",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 165,
         "skulls": 1
@@ -645,6 +660,7 @@
         "nodeNumber": 12,
         "reward": "Standard-Issue Tourniquet",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 163,
         "skulls": 1
@@ -655,6 +671,7 @@
         "nodeNumber": 13,
         "reward": "Weapon Parts",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 161,
         "skulls": 1
@@ -665,6 +682,7 @@
         "nodeNumber": 14,
         "reward": "Adamantium Ore",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 188,
         "skulls": 1
@@ -685,6 +703,7 @@
         "nodeNumber": 16,
         "reward": "Pile of Salvage",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 174,
         "skulls": 1
@@ -715,6 +734,7 @@
         "nodeNumber": 19,
         "reward": "Auspex",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 200,
         "skulls": 1
@@ -725,6 +745,7 @@
         "nodeNumber": 2,
         "reward": "Nasty Spikes",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 126,
         "skulls": 1
@@ -735,6 +756,7 @@
         "nodeNumber": 20,
         "reward": "Round of Ammo",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 264,
         "skulls": 1
@@ -745,6 +767,7 @@
         "nodeNumber": 21,
         "reward": "Targeting Link",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 228,
         "skulls": 1
@@ -775,6 +798,7 @@
         "nodeNumber": 24,
         "reward": "Canister of Chemicals",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 277,
         "skulls": 1
@@ -795,6 +819,7 @@
         "nodeNumber": 26,
         "reward": "Metal Joints",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 308,
         "skulls": 1
@@ -805,6 +830,7 @@
         "nodeNumber": 27,
         "reward": "Lesser Reliquary of Protection",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 312,
         "skulls": 1
@@ -815,6 +841,7 @@
         "nodeNumber": 28,
         "reward": "Box of Salvage",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 345,
         "skulls": 1
@@ -835,6 +862,7 @@
         "nodeNumber": 3,
         "reward": "Wires",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 138,
         "skulls": 1
@@ -855,6 +883,7 @@
         "nodeNumber": 31,
         "reward": "Fine Micro-Generator",
         "expectedGold": 65,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 505,
         "skulls": 1
@@ -915,6 +944,7 @@
         "nodeNumber": 37,
         "reward": "Cloak",
         "expectedGold": 65,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 1382,
         "skulls": 1
@@ -925,6 +955,7 @@
         "nodeNumber": 38,
         "reward": "Artificial Vertebrae",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 2527,
         "skulls": 1
@@ -945,6 +976,7 @@
         "nodeNumber": 4,
         "reward": "Satchel",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 108,
         "skulls": 1
@@ -975,6 +1007,7 @@
         "nodeNumber": 42,
         "reward": "Writings",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 889,
         "skulls": 1
@@ -985,6 +1018,7 @@
         "nodeNumber": 43,
         "reward": "Mission Objective",
         "expectedGold": 65,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 1274,
         "skulls": 1
@@ -1035,6 +1069,7 @@
         "nodeNumber": 48,
         "reward": "Thick Skin",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 2694,
         "skulls": 1
@@ -1055,6 +1090,7 @@
         "nodeNumber": 5,
         "reward": "Ropes and Chains",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 114,
         "skulls": 1
@@ -1085,6 +1121,7 @@
         "nodeNumber": 52,
         "reward": "Mission Assignment",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 2706,
         "skulls": 1
@@ -1115,6 +1152,7 @@
         "nodeNumber": 55,
         "reward": "Ballistics Data",
         "expectedGold": 71,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 1173,
         "skulls": 1
@@ -1165,6 +1203,7 @@
         "nodeNumber": 6,
         "reward": "Chip Damage",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 160,
         "skulls": 1
@@ -1185,6 +1224,7 @@
         "nodeNumber": 61,
         "reward": "Secret Agenda",
         "expectedGold": 77,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 8304,
         "skulls": 1
@@ -1265,6 +1305,7 @@
         "nodeNumber": 69,
         "reward": "Bionic Eye",
         "expectedGold": 77,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 10083,
         "skulls": 1
@@ -1365,6 +1406,7 @@
         "nodeNumber": 1,
         "reward": "Ropes and Chains",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 100,
         "skulls": 1
@@ -1375,6 +1417,9 @@
         "nodeNumber": 10,
         "reward": "Cloak",
         "expectedGold": 53,
+        "slots": 3,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks"],
         "deployable": 3,
         "totalEnemyPower": 171,
         "skulls": 1
@@ -1385,6 +1430,9 @@
         "nodeNumber": 11,
         "reward": "Armor Trim",
         "expectedGold": 53,
+        "slots": 4,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks"],
         "deployable": 4,
         "totalEnemyPower": 220,
         "skulls": 1
@@ -1395,6 +1443,9 @@
         "nodeNumber": 12,
         "reward": "Reinforced Scale-Plates",
         "expectedGold": 53,
+        "slots": 4,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks"],
         "deployable": 4,
         "totalEnemyPower": 208,
         "skulls": 1
@@ -1405,6 +1456,7 @@
         "nodeNumber": 13,
         "reward": "Mission Assignment",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 234,
         "skulls": 1
@@ -1415,6 +1467,7 @@
         "nodeNumber": 14,
         "reward": "Vox-Caster",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 273,
         "skulls": 1
@@ -1425,6 +1478,7 @@
         "nodeNumber": 15,
         "reward": "Brother Burchard",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 282,
         "skulls": 1
@@ -1435,6 +1489,7 @@
         "nodeNumber": 16,
         "reward": "Scrolls",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 273,
         "skulls": 1
@@ -1445,6 +1500,7 @@
         "nodeNumber": 17,
         "reward": "Rebreather",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 234,
         "skulls": 1
@@ -1455,6 +1511,7 @@
         "nodeNumber": 18,
         "reward": "Satchel",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 312,
         "skulls": 1
@@ -1475,6 +1532,7 @@
         "nodeNumber": 2,
         "reward": "Wires",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 125,
         "skulls": 1
@@ -1505,6 +1563,7 @@
         "nodeNumber": 22,
         "reward": "Bladesman's Honour",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 325,
         "skulls": 1
@@ -1525,6 +1584,7 @@
         "nodeNumber": 24,
         "reward": "Writings",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 267,
         "skulls": 1
@@ -1535,6 +1595,7 @@
         "nodeNumber": 25,
         "reward": "Mission Objective",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 360,
         "skulls": 1
@@ -1585,6 +1646,7 @@
         "nodeNumber": 3,
         "reward": "Chip Damage",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 150,
         "skulls": 1
@@ -1615,6 +1677,7 @@
         "nodeNumber": 32,
         "reward": "Ancient Runes",
         "expectedGold": 65,
+        "slots": 34,
         "deployable": 5,
         "totalEnemyPower": 468,
         "skulls": 1
@@ -1647,7 +1710,9 @@
         "expectedGold": 65,
         "deployable": 5,
         "totalEnemyPower": 518,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Black Templars"]
     },
     "O36": {
         "campaign": "Octarius",
@@ -1655,6 +1720,8 @@
         "nodeNumber": 36,
         "reward": "Metal Decorative Skull",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 450,
         "skulls": 1
@@ -1665,6 +1732,9 @@
         "nodeNumber": 37,
         "reward": "Artificer Tasset Plate",
         "expectedGold": 65,
+        "slots": 3,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 3,
         "totalEnemyPower": 432,
         "skulls": 1
@@ -1675,6 +1745,9 @@
         "nodeNumber": 38,
         "reward": "Sigil of Decay",
         "expectedGold": 65,
+        "slots": 4,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 4,
         "totalEnemyPower": 595,
         "skulls": 1
@@ -1685,6 +1758,9 @@
         "nodeNumber": 39,
         "reward": "Krak Grenade",
         "expectedGold": 65,
+        "slots": 3,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 336,
         "skulls": 1
@@ -1695,6 +1771,7 @@
         "nodeNumber": 4,
         "reward": "Nasty Spikes",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 180,
         "skulls": 1
@@ -1705,6 +1782,9 @@
         "nodeNumber": 40,
         "reward": "Special Issue Ammo",
         "expectedGold": 65,
+        "slots": 4,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 560,
         "skulls": 1
@@ -1715,6 +1795,8 @@
         "nodeNumber": 41,
         "reward": "Chain of Zeal",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 816,
         "skulls": 1
@@ -1725,6 +1807,8 @@
         "nodeNumber": 42,
         "reward": "Terminator Honours",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 952,
         "skulls": 1
@@ -1737,7 +1821,9 @@
         "expectedGold": 65,
         "deployable": 5,
         "totalEnemyPower": 1133,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Black Templars"]
     },
     "O44": {
         "campaign": "Octarius",
@@ -1747,7 +1833,9 @@
         "expectedGold": 65,
         "deployable": 5,
         "totalEnemyPower": 1227,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Black Templars"]
     },
     "O45": {
         "campaign": "Octarius",
@@ -1757,7 +1845,9 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 1359,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Black Templars"]
     },
     "O46": {
         "campaign": "Octarius",
@@ -1765,6 +1855,7 @@
         "nodeNumber": 46,
         "reward": "Bad Moon Teef",
         "expectedGold": 71,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 924,
         "skulls": 1
@@ -1777,7 +1868,9 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 1557,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Black Templars"]
     },
     "O48": {
         "campaign": "Octarius",
@@ -1787,7 +1880,9 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 2067,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Black Templars"]
     },
     "O49": {
         "campaign": "Octarius",
@@ -1805,6 +1900,9 @@
         "nodeNumber": 5,
         "reward": "Thick Skin",
         "expectedGold": 53,
+        "slots": 3,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks"],
         "deployable": 3,
         "totalEnemyPower": 125,
         "skulls": 1
@@ -1815,6 +1913,9 @@
         "nodeNumber": 50,
         "reward": "Blessed Corset Armor",
         "expectedGold": 71,
+        "slots": 4,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 4,
         "totalEnemyPower": 1121,
         "skulls": 1
@@ -1827,7 +1928,9 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 1644,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Astra Militarum"]
     },
     "O52": {
         "campaign": "Octarius",
@@ -1837,7 +1940,9 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 1580,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Astra Militarum"]
     },
     "O53": {
         "campaign": "Octarius",
@@ -1845,6 +1950,8 @@
         "nodeNumber": 53,
         "reward": "Basic Auxiliary Core",
         "expectedGold": 71,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"],
         "deployable": 5,
         "totalEnemyPower": 876,
         "skulls": 1
@@ -1855,6 +1962,8 @@
         "nodeNumber": 54,
         "reward": "Blessed Tabbard",
         "expectedGold": 71,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"],
         "deployable": 5,
         "totalEnemyPower": 1090,
         "skulls": 1
@@ -1867,7 +1976,9 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 1728,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars"]
     },
     "O56": {
         "campaign": "Octarius",
@@ -1877,7 +1988,9 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 2682,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars"]
     },
     "O57": {
         "campaign": "Octarius",
@@ -1887,7 +2000,10 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 2791,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars"]
     },
     "O58": {
         "campaign": "Octarius",
@@ -1897,7 +2013,9 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 3746,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars"]
     },
     "O59": {
         "campaign": "Octarius",
@@ -1907,7 +2025,9 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 4764,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars"]
     },
     "O6": {
         "campaign": "Octarius",
@@ -1915,6 +2035,9 @@
         "nodeNumber": 6,
         "reward": "Metal Joints",
         "expectedGold": 53,
+        "slots": 3,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks"],
         "deployable": 3,
         "totalEnemyPower": 150,
         "skulls": 1
@@ -1947,7 +2070,10 @@
         "expectedGold": 77,
         "deployable": 3,
         "totalEnemyPower": 2202,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"]
     },
     "O63": {
         "campaign": "Octarius",
@@ -1957,7 +2083,9 @@
         "expectedGold": 77,
         "deployable": 5,
         "totalEnemyPower": 6938,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial", "Xenos"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars", "Tyranids"]
     },
     "O64": {
         "campaign": "Octarius",
@@ -1965,6 +2093,8 @@
         "nodeNumber": 64,
         "reward": "Auspex",
         "expectedGold": 77,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 6094,
         "skulls": 1
@@ -1985,6 +2115,7 @@
         "nodeNumber": 66,
         "reward": "Purity Seal",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 6660,
         "skulls": 1
@@ -1997,7 +2128,10 @@
         "expectedGold": 77,
         "deployable": 4,
         "totalEnemyPower": 8691,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Black Templars"]
     },
     "O68": {
         "campaign": "Octarius",
@@ -2007,7 +2141,9 @@
         "expectedGold": 77,
         "deployable": 5,
         "totalEnemyPower": 13447,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial", "Xenos"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars", "Tyranids"]
     },
     "O69": {
         "campaign": "Octarius",
@@ -2017,7 +2153,9 @@
         "expectedGold": 77,
         "deployable": 5,
         "totalEnemyPower": 12502,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial", "Xenos"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars", "Tyranids"]
     },
     "O7": {
         "campaign": "Octarius",
@@ -2025,6 +2163,8 @@
         "nodeNumber": 7,
         "reward": "Adamantium Filaments",
         "expectedGold": 53,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks"],
         "deployable": 3,
         "totalEnemyPower": 144,
         "skulls": 1
@@ -2037,7 +2177,9 @@
         "expectedGold": 77,
         "deployable": 5,
         "totalEnemyPower": 11815,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Black Templars"]
     },
     "O71": {
         "campaign": "Octarius",
@@ -2057,7 +2199,9 @@
         "expectedGold": 77,
         "deployable": 5,
         "totalEnemyPower": 12194,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars"]
     },
     "O73": {
         "campaign": "Octarius",
@@ -2067,7 +2211,9 @@
         "expectedGold": 77,
         "deployable": 5,
         "totalEnemyPower": 13380,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars"]
     },
     "O74": {
         "campaign": "Octarius",
@@ -2077,7 +2223,9 @@
         "expectedGold": 77,
         "deployable": 5,
         "totalEnemyPower": 19504,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial", "Xenos"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars", "Tyranids"]
     },
     "O75": {
         "campaign": "Octarius",
@@ -2087,7 +2235,9 @@
         "expectedGold": 83,
         "deployable": 5,
         "totalEnemyPower": 17202,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum", "Black Templars"]
     },
     "O8": {
         "campaign": "Octarius",
@@ -2095,6 +2245,8 @@
         "nodeNumber": 8,
         "reward": "Weapon Parts",
         "expectedGold": 53,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks"],
         "deployable": 3,
         "totalEnemyPower": 168,
         "skulls": 1
@@ -2105,6 +2257,8 @@
         "nodeNumber": 9,
         "reward": "Combat Stimms",
         "expectedGold": 53,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks"],
         "deployable": 3,
         "totalEnemyPower": 152,
         "skulls": 1
@@ -2115,6 +2269,7 @@
         "nodeNumber": 1,
         "reward": "Adamantium Filaments",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 129,
         "skulls": 1
@@ -2127,7 +2282,10 @@
         "expectedGold": 53,
         "deployable": 3,
         "totalEnemyPower": 288,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH11": {
         "campaign": "Saim-Hann",
@@ -2137,7 +2295,10 @@
         "expectedGold": 53,
         "deployable": 3,
         "totalEnemyPower": 207,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH12": {
         "campaign": "Saim-Hann",
@@ -2145,6 +2306,7 @@
         "nodeNumber": 12,
         "reward": "Adamantium Ore",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 264,
         "skulls": 1
@@ -2157,7 +2319,10 @@
         "expectedGold": 53,
         "deployable": 4,
         "totalEnemyPower": 246,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH14": {
         "campaign": "Saim-Hann",
@@ -2167,7 +2332,10 @@
         "expectedGold": 53,
         "deployable": 4,
         "totalEnemyPower": 276,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH15": {
         "campaign": "Saim-Hann",
@@ -2175,6 +2343,7 @@
         "nodeNumber": 15,
         "reward": "Toth",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 316,
         "skulls": 1
@@ -2187,7 +2356,10 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 269,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH17": {
         "campaign": "Saim-Hann",
@@ -2197,7 +2369,10 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 144,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"]
     },
     "SH18": {
         "campaign": "Saim-Hann",
@@ -2205,6 +2380,8 @@
         "nodeNumber": 18,
         "reward": "Advanced Filaments",
         "expectedGold": 59,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"],
         "deployable": 5,
         "totalEnemyPower": 169,
         "skulls": 1
@@ -2215,6 +2392,8 @@
         "nodeNumber": 19,
         "reward": "Lesser Reliquary of Protection",
         "expectedGold": 59,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"],
         "deployable": 5,
         "totalEnemyPower": 178,
         "skulls": 1
@@ -2225,6 +2404,7 @@
         "nodeNumber": 2,
         "reward": "Scrolls",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 172,
         "skulls": 1
@@ -2235,6 +2415,8 @@
         "nodeNumber": 20,
         "reward": "Mesh Weave",
         "expectedGold": 59,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"],
         "deployable": 5,
         "totalEnemyPower": 205,
         "skulls": 1
@@ -2247,7 +2429,9 @@
         "expectedGold": 59,
         "deployable": 5,
         "totalEnemyPower": 476,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH22": {
         "campaign": "Saim-Hann",
@@ -2255,6 +2439,7 @@
         "nodeNumber": 22,
         "reward": "Cloak",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 4,
         "totalEnemyPower": 352,
         "skulls": 1
@@ -2267,7 +2452,10 @@
         "expectedGold": 59,
         "deployable": 3,
         "totalEnemyPower": 157,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"]
     },
     "SH24": {
         "campaign": "Saim-Hann",
@@ -2277,7 +2465,10 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 216,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"]
     },
     "SH25": {
         "campaign": "Saim-Hann",
@@ -2287,7 +2478,9 @@
         "expectedGold": 59,
         "deployable": 5,
         "totalEnemyPower": 548,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH26": {
         "campaign": "Saim-Hann",
@@ -2295,6 +2488,8 @@
         "nodeNumber": 26,
         "reward": "Mutation: Warped Lungs",
         "expectedGold": 59,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"],
         "deployable": 5,
         "totalEnemyPower": 220,
         "skulls": 1
@@ -2307,7 +2502,9 @@
         "expectedGold": 59,
         "deployable": 5,
         "totalEnemyPower": 539,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH28": {
         "campaign": "Saim-Hann",
@@ -2317,7 +2514,9 @@
         "expectedGold": 59,
         "deployable": 5,
         "totalEnemyPower": 539,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH29": {
         "campaign": "Saim-Hann",
@@ -2327,7 +2526,9 @@
         "expectedGold": 59,
         "deployable": 5,
         "totalEnemyPower": 589,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH3": {
         "campaign": "Saim-Hann",
@@ -2335,6 +2536,7 @@
         "nodeNumber": 3,
         "reward": "Targeting Link",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 172,
         "skulls": 1
@@ -2347,7 +2549,9 @@
         "expectedGold": 65,
         "deployable": 5,
         "totalEnemyPower": 619,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH31": {
         "campaign": "Saim-Hann",
@@ -2355,6 +2559,7 @@
         "nodeNumber": 31,
         "reward": "Ritual Implements",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 384,
         "skulls": 1
@@ -2365,6 +2570,7 @@
         "nodeNumber": 32,
         "reward": "Waystone",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 448,
         "skulls": 1
@@ -2375,6 +2581,7 @@
         "nodeNumber": 33,
         "reward": "Crate of Salvage",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 576,
         "skulls": 1
@@ -2385,6 +2592,7 @@
         "nodeNumber": 34,
         "reward": "Reliquary of Protection",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 557,
         "skulls": 1
@@ -2395,6 +2603,7 @@
         "nodeNumber": 35,
         "reward": "Blessed Tasset Plate",
         "expectedGold": 65,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 770,
         "skulls": 1
@@ -2435,6 +2644,7 @@
         "nodeNumber": 39,
         "reward": "Ancient Runes",
         "expectedGold": 65,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 960,
         "skulls": 1
@@ -2445,6 +2655,7 @@
         "nodeNumber": 4,
         "reward": "Vox-Caster",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 215,
         "skulls": 1
@@ -2515,6 +2726,7 @@
         "nodeNumber": 46,
         "reward": "Chapter Pendant",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 1312,
         "skulls": 1
@@ -2525,6 +2737,7 @@
         "nodeNumber": 47,
         "reward": "Field Ration",
         "expectedGold": 71,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 1113,
         "skulls": 1
@@ -2535,6 +2748,7 @@
         "nodeNumber": 48,
         "reward": "Bionic Eye",
         "expectedGold": 71,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 1170,
         "skulls": 1
@@ -2545,6 +2759,7 @@
         "nodeNumber": 49,
         "reward": "Healing Ointment",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 1365,
         "skulls": 1
@@ -2555,6 +2770,7 @@
         "nodeNumber": 5,
         "reward": "Armor Trim",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 218,
         "skulls": 1
@@ -2575,6 +2791,7 @@
         "nodeNumber": 51,
         "reward": "Otherworldly Energy",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 2175,
         "skulls": 1
@@ -2585,6 +2802,7 @@
         "nodeNumber": 52,
         "reward": "Bladesman's Honour",
         "expectedGold": 71,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 1763,
         "skulls": 1
@@ -2595,6 +2813,7 @@
         "nodeNumber": 53,
         "reward": "Slicing Claws",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 2445,
         "skulls": 1
@@ -2635,6 +2854,7 @@
         "nodeNumber": 57,
         "reward": "Tainted Text",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 2541,
         "skulls": 1
@@ -2645,6 +2865,7 @@
         "nodeNumber": 58,
         "reward": "Wraithbone Plate",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 3616,
         "skulls": 1
@@ -2655,6 +2876,8 @@
         "nodeNumber": 59,
         "reward": "Hypermaterial Shifter",
         "expectedGold": 71,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Aeldari"],
         "deployable": 5,
         "totalEnemyPower": 4752,
         "skulls": 1
@@ -2667,7 +2890,10 @@
         "expectedGold": 53,
         "deployable": 3,
         "totalEnemyPower": 191,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH60": {
         "campaign": "Saim-Hann",
@@ -2725,6 +2951,7 @@
         "nodeNumber": 65,
         "reward": "Air Purificator",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 5760,
         "skulls": 1
@@ -2777,7 +3004,10 @@
         "expectedGold": 53,
         "deployable": 3,
         "totalEnemyPower": 215,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH70": {
         "campaign": "Saim-Hann",
@@ -2785,6 +3015,7 @@
         "nodeNumber": 70,
         "reward": "Blessed Tasset Plate",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 11617,
         "skulls": 1
@@ -2795,6 +3026,7 @@
         "nodeNumber": 71,
         "reward": "Mutation: Warped Heart",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 4,
         "totalEnemyPower": 12385,
         "skulls": 1
@@ -2847,7 +3079,9 @@
         "expectedGold": 53,
         "deployable": 3,
         "totalEnemyPower": 220,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "SH9": {
         "campaign": "Saim-Hann",
@@ -2857,7 +3091,9 @@
         "expectedGold": 53,
         "deployable": 3,
         "totalEnemyPower": 254,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Chaos"],
+        "enemiesFactions": ["Black Legion", "Thousand Sons"]
     },
     "IM1": {
         "campaign": "Indomitus Mirror",
@@ -2867,7 +3103,10 @@
         "expectedGold": 53,
         "deployable": 5,
         "totalEnemyPower": 0,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"]
     },
     "IM10": {
         "campaign": "Indomitus Mirror",
@@ -2875,6 +3114,7 @@
         "nodeNumber": 10,
         "reward": "Blessed Tasset Plate",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -2887,7 +3127,10 @@
         "expectedGold": 53,
         "deployable": 5,
         "totalEnemyPower": 0,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"]
     },
     "IM12": {
         "campaign": "Indomitus Mirror",
@@ -2895,6 +3138,7 @@
         "nodeNumber": 12,
         "reward": "Crate of Salvage",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -2905,6 +3149,7 @@
         "nodeNumber": 13,
         "reward": "Classified Data-Slate",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -2915,6 +3160,7 @@
         "nodeNumber": 14,
         "reward": "Kill Count",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -2945,6 +3191,7 @@
         "nodeNumber": 17,
         "reward": "Mutation: Warped Heart",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -2955,6 +3202,7 @@
         "nodeNumber": 18,
         "reward": "Artificer Tasset Plate",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -2977,7 +3225,10 @@
         "expectedGold": 53,
         "deployable": 5,
         "totalEnemyPower": 0,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"]
     },
     "IM20": {
         "campaign": "Indomitus Mirror",
@@ -2995,6 +3246,8 @@
         "nodeNumber": 21,
         "reward": "Nano Swarm",
         "expectedGold": 59,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3035,6 +3288,7 @@
         "nodeNumber": 25,
         "reward": "Greater Reliquary of Vengeance",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3055,6 +3309,8 @@
         "nodeNumber": 27,
         "reward": "Standard-Issue Tourniquet",
         "expectedGold": 59,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3075,6 +3331,8 @@
         "nodeNumber": 29,
         "reward": "Ropes and Chains",
         "expectedGold": 59,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3085,6 +3343,7 @@
         "nodeNumber": 3,
         "reward": "Mutation: Warped Muscles",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3115,6 +3374,7 @@
         "nodeNumber": 32,
         "reward": "Psytronome",
         "expectedGold": 65,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3135,6 +3395,8 @@
         "nodeNumber": 34,
         "reward": "Motive Force Capacitator",
         "expectedGold": 65,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3145,6 +3407,7 @@
         "nodeNumber": 35,
         "reward": "Metal Decorative Skull",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3165,6 +3428,7 @@
         "nodeNumber": 37,
         "reward": "Slicing Claws",
         "expectedGold": 65,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3175,6 +3439,7 @@
         "nodeNumber": 38,
         "reward": "Stimm Injector",
         "expectedGold": 65,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3197,7 +3462,10 @@
         "expectedGold": 53,
         "deployable": 5,
         "totalEnemyPower": 0,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"]
     },
     "IM40": {
         "campaign": "Indomitus Mirror",
@@ -3225,6 +3493,7 @@
         "nodeNumber": 42,
         "reward": "Mutation: Tough Skin",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3245,6 +3514,7 @@
         "nodeNumber": 44,
         "reward": "Tank of Promethium",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3307,7 +3577,10 @@
         "expectedGold": 53,
         "deployable": 5,
         "totalEnemyPower": 0,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"]
     },
     "IM50": {
         "campaign": "Indomitus Mirror",
@@ -3315,6 +3588,7 @@
         "nodeNumber": 50,
         "reward": "Otherworldly Energy",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3335,6 +3609,7 @@
         "nodeNumber": 52,
         "reward": "Barrel of Promethium",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3353,7 +3628,7 @@
         "campaign": "Indomitus Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 54,
-        "reward": "Weapon Anointment Oils",
+        "reward": "Subdermal Plating",
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -3367,7 +3642,10 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 0,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"]
     },
     "IM56": {
         "campaign": "Indomitus Mirror",
@@ -3415,6 +3693,7 @@
         "nodeNumber": 6,
         "reward": "Combat Stimms",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3445,6 +3724,7 @@
         "nodeNumber": 62,
         "reward": "Canister of Chemicals",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3455,6 +3735,7 @@
         "nodeNumber": 63,
         "reward": "Divinator Class Auspex",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3495,6 +3776,8 @@
         "nodeNumber": 67,
         "reward": "Reliquary of Vengeance",
         "expectedGold": 77,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3525,6 +3808,7 @@
         "nodeNumber": 7,
         "reward": "Reinforced Cables",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3535,6 +3819,7 @@
         "nodeNumber": 70,
         "reward": "Codex Astartes Page",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3555,6 +3840,7 @@
         "nodeNumber": 72,
         "reward": "Holy Chaplet",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3575,6 +3861,8 @@
         "nodeNumber": 74,
         "reward": "Hypermaterial Shifter",
         "expectedGold": 77,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3595,6 +3883,7 @@
         "nodeNumber": 8,
         "reward": "Reinforced Scale-Plates",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3605,6 +3894,7 @@
         "nodeNumber": 9,
         "reward": "Air Purificator",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3615,6 +3905,7 @@
         "nodeNumber": 1,
         "reward": "Round of Ammo",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3625,6 +3916,7 @@
         "nodeNumber": 10,
         "reward": "Ceramite Lump",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3635,6 +3927,7 @@
         "nodeNumber": 11,
         "reward": "Attack Vector Data-Slate",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3645,6 +3938,7 @@
         "nodeNumber": 12,
         "reward": "The Gold Phoenix",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3655,6 +3949,7 @@
         "nodeNumber": 13,
         "reward": "Scrolls",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3665,6 +3960,7 @@
         "nodeNumber": 14,
         "reward": "Enriched Rations",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3685,6 +3981,7 @@
         "nodeNumber": 16,
         "reward": "Purity Seal",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3695,6 +3992,7 @@
         "nodeNumber": 17,
         "reward": "Frag Grenade",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3715,6 +4013,7 @@
         "nodeNumber": 19,
         "reward": "Basic Auxiliary Core",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3725,6 +4024,7 @@
         "nodeNumber": 2,
         "reward": "Field Ration",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3815,6 +4115,7 @@
         "nodeNumber": 28,
         "reward": "Relic Hilt",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3885,6 +4186,7 @@
         "nodeNumber": 34,
         "reward": "Mission Objective",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3915,6 +4217,7 @@
         "nodeNumber": 37,
         "reward": "Cogwheel Crest",
         "expectedGold": 65,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -3945,6 +4248,7 @@
         "nodeNumber": 4,
         "reward": "Slicing Claws",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4015,6 +4319,7 @@
         "nodeNumber": 46,
         "reward": "Mutation: Warped Heart",
         "expectedGold": 71,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4055,6 +4360,7 @@
         "nodeNumber": 5,
         "reward": "Mutation: Scaly Skin",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4065,6 +4371,7 @@
         "nodeNumber": 50,
         "reward": "Drone Controller",
         "expectedGold": 71,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4075,6 +4382,7 @@
         "nodeNumber": 51,
         "reward": "Viridian Energy Tesseract",
         "expectedGold": 71,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4085,6 +4393,7 @@
         "nodeNumber": 52,
         "reward": "Ancient Runes",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4165,6 +4474,7 @@
         "nodeNumber": 6,
         "reward": "Lesser Reliquary of Protection",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4195,6 +4505,7 @@
         "nodeNumber": 62,
         "reward": "Engram Neurochip",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4205,6 +4516,7 @@
         "nodeNumber": 63,
         "reward": "Artificial Vertebrae",
         "expectedGold": 77,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4235,6 +4547,7 @@
         "nodeNumber": 66,
         "reward": "Honourifica Imperialis",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4265,6 +4578,7 @@
         "nodeNumber": 69,
         "reward": "Nasty Spikes",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4275,6 +4589,7 @@
         "nodeNumber": 7,
         "reward": "Fine Purity Seal",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4315,6 +4630,7 @@
         "nodeNumber": 73,
         "reward": "Weathering",
         "expectedGold": 77,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4345,6 +4661,7 @@
         "nodeNumber": 8,
         "reward": "Box of Salvage",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4355,6 +4672,7 @@
         "nodeNumber": 9,
         "reward": "Pile of Salvage",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4365,6 +4683,7 @@
         "nodeNumber": 1,
         "reward": "Purity Seal",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4375,6 +4694,7 @@
         "nodeNumber": 10,
         "reward": "Weapon Anointment Oils",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4385,6 +4705,7 @@
         "nodeNumber": 11,
         "reward": "Minor Bionic Enhancement",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4395,6 +4716,7 @@
         "nodeNumber": 12,
         "reward": "Mission Assignment",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4405,6 +4727,7 @@
         "nodeNumber": 13,
         "reward": "Ropes and Chains",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4415,6 +4738,7 @@
         "nodeNumber": 14,
         "reward": "Basic Auxiliary Core",
         "expectedGold": 53,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4425,6 +4749,7 @@
         "nodeNumber": 15,
         "reward": "Snappawrecka",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4435,6 +4760,7 @@
         "nodeNumber": 16,
         "reward": "Chip Damage",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4445,6 +4771,7 @@
         "nodeNumber": 17,
         "reward": "Field Ration",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4455,6 +4782,7 @@
         "nodeNumber": 18,
         "reward": "Pile of Salvage",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4465,6 +4793,7 @@
         "nodeNumber": 19,
         "reward": "Auspex",
         "expectedGold": 59,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4475,6 +4804,7 @@
         "nodeNumber": 2,
         "reward": "Canister of Chemicals",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4485,6 +4815,7 @@
         "nodeNumber": 20,
         "reward": "Lesser Reliquary of Protection",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4495,6 +4826,7 @@
         "nodeNumber": 21,
         "reward": "Vox-Caster",
         "expectedGold": 59,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4585,6 +4917,7 @@
         "nodeNumber": 3,
         "reward": "Weapon Parts",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4605,6 +4938,7 @@
         "nodeNumber": 31,
         "reward": "Fine Purity Seal",
         "expectedGold": 65,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4635,6 +4969,8 @@
         "nodeNumber": 34,
         "reward": "Cloak",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids", "Orks"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4645,6 +4981,8 @@
         "nodeNumber": 35,
         "reward": "Metal Joints",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4655,6 +4993,8 @@
         "nodeNumber": 36,
         "reward": "Plasma Cell",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4665,6 +5005,9 @@
         "nodeNumber": 37,
         "reward": "The Phoenix Ascendant",
         "expectedGold": 65,
+        "slots": 3,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4675,6 +5018,9 @@
         "nodeNumber": 38,
         "reward": "Kill Count",
         "expectedGold": 65,
+        "slots": 4,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4685,6 +5031,8 @@
         "nodeNumber": 39,
         "reward": "Ceramite Lump",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4695,6 +5043,7 @@
         "nodeNumber": 4,
         "reward": "Frag Grenade",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4705,6 +5054,8 @@
         "nodeNumber": 40,
         "reward": "Oath Seal",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4715,6 +5066,8 @@
         "nodeNumber": 41,
         "reward": "Bladesman's Honour",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4725,6 +5078,8 @@
         "nodeNumber": 42,
         "reward": "Satchel",
         "expectedGold": 65,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4765,6 +5120,7 @@
         "nodeNumber": 46,
         "reward": "Ballistics Data",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4775,6 +5131,8 @@
         "nodeNumber": 47,
         "reward": "Mission Objective",
         "expectedGold": 71,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4785,6 +5143,8 @@
         "nodeNumber": 48,
         "reward": "Tank of Promethium",
         "expectedGold": 71,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4795,6 +5155,8 @@
         "nodeNumber": 49,
         "reward": "Artificer Tasset Plate",
         "expectedGold": 71,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4805,6 +5167,7 @@
         "nodeNumber": 5,
         "reward": "Standard-Issue Tourniquet",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4815,6 +5178,8 @@
         "nodeNumber": 50,
         "reward": "Classified Data-Slate",
         "expectedGold": 71,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4835,6 +5200,7 @@
         "nodeNumber": 52,
         "reward": "Metal Decorative Skull",
         "expectedGold": 71,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4845,6 +5211,8 @@
         "nodeNumber": 53,
         "reward": "Iron Jaw",
         "expectedGold": 71,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids", "Orks"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4865,6 +5233,8 @@
         "nodeNumber": 55,
         "reward": "Krak Grenade",
         "expectedGold": 71,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4875,6 +5245,7 @@
         "nodeNumber": 56,
         "reward": "Reinforced Chitin",
         "expectedGold": 71,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4887,7 +5258,10 @@
         "expectedGold": 71,
         "deployable": 5,
         "totalEnemyPower": 0,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids", "Orks"]
     },
     "OM58": {
         "campaign": "Octarius Mirror",
@@ -4895,6 +5269,8 @@
         "nodeNumber": 58,
         "reward": "Advanced Filaments",
         "expectedGold": 71,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids", "Orks"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4915,6 +5291,7 @@
         "nodeNumber": 6,
         "reward": "Healing Ointment",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4945,6 +5322,7 @@
         "nodeNumber": 62,
         "reward": "Enriched Rations",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4955,6 +5333,7 @@
         "nodeNumber": 63,
         "reward": "Righteous Candle",
         "expectedGold": 77,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4975,6 +5354,8 @@
         "nodeNumber": 65,
         "reward": "Targeting Link",
         "expectedGold": 77,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids", "Orks"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -4995,6 +5376,8 @@
         "nodeNumber": 67,
         "reward": "Plague Bell",
         "expectedGold": 77,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5015,6 +5398,8 @@
         "nodeNumber": 69,
         "reward": "Ard Plate",
         "expectedGold": 77,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids", "Orks"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5025,6 +5410,7 @@
         "nodeNumber": 7,
         "reward": "Rebreather",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5035,6 +5421,8 @@
         "nodeNumber": 70,
         "reward": "Bones of the Paragons",
         "expectedGold": 77,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5045,6 +5433,7 @@
         "nodeNumber": 71,
         "reward": "Mjod",
         "expectedGold": 77,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5065,6 +5454,8 @@
         "nodeNumber": 73,
         "reward": "Duplicate Organ",
         "expectedGold": 77,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5125,6 +5516,7 @@
         "nodeNumber": 10,
         "reward": "Fine Purity Seal",
         "expectedGold": 91.5,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5155,6 +5547,7 @@
         "nodeNumber": 13,
         "reward": "Oath Seal",
         "expectedGold": 91.5,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5165,6 +5558,7 @@
         "nodeNumber": 14,
         "reward": "Reliquary of Vengeance",
         "expectedGold": 91.5,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5215,6 +5609,7 @@
         "nodeNumber": 19,
         "reward": "Rose of Martyrs",
         "expectedGold": 101,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5245,6 +5640,7 @@
         "nodeNumber": 21,
         "reward": "Blessed Corset Armor",
         "expectedGold": 101,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5295,6 +5691,7 @@
         "nodeNumber": 26,
         "reward": "Viridian Energy Tesseract",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5305,6 +5702,7 @@
         "nodeNumber": 27,
         "reward": "Greater Reliquary of Vengeance",
         "expectedGold": 108,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5315,6 +5713,7 @@
         "nodeNumber": 28,
         "reward": "Engrammatic Entangler",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5355,6 +5754,7 @@
         "nodeNumber": 31,
         "reward": "Terminator Honours",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5385,6 +5785,7 @@
         "nodeNumber": 34,
         "reward": "Blessed Tasset Plate",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5393,8 +5794,9 @@
         "campaign": "Indomitus Elite",
         "campaignType": "Elite",
         "nodeNumber": 35,
-        "reward": "Ceramite Lump",
+        "reward": "Subdermal Plating",
         "expectedGold": 108,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5405,6 +5807,7 @@
         "nodeNumber": 36,
         "reward": "Krak Grenade",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5415,6 +5818,7 @@
         "nodeNumber": 37,
         "reward": "Special Issue Ammo",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5443,8 +5847,9 @@
         "campaign": "Indomitus Elite",
         "campaignType": "Elite",
         "nodeNumber": 4,
-        "reward": "Enriched Rations",
+        "reward": "Ceramite Lump",
         "expectedGold": 83,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5505,6 +5910,7 @@
         "nodeNumber": 9,
         "reward": "Weapon Anointment Oils",
         "expectedGold": 91.5,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5525,6 +5931,7 @@
         "nodeNumber": 10,
         "reward": "Mutation: Warped Muscles",
         "expectedGold": 91.5,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5535,6 +5942,7 @@
         "nodeNumber": 11,
         "reward": "Brazen Jaws",
         "expectedGold": 91.5,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5545,6 +5953,7 @@
         "nodeNumber": 12,
         "reward": "Helmet Trophy",
         "expectedGold": 91.5,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5565,6 +5974,7 @@
         "nodeNumber": 14,
         "reward": "Fine Micro-Generator",
         "expectedGold": 91.5,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5583,7 +5993,7 @@
         "campaign": "Fall of Cadia Elite",
         "campaignType": "Elite",
         "nodeNumber": 16,
-        "reward": "Sibyll Devine",
+        "reward": "Sibyll",
         "expectedGold": 91.5,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -5615,6 +6025,7 @@
         "nodeNumber": 19,
         "reward": "Eye of Horus",
         "expectedGold": 101,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5625,6 +6036,7 @@
         "nodeNumber": 2,
         "reward": "Scrolls",
         "expectedGold": 83,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5655,6 +6067,7 @@
         "nodeNumber": 22,
         "reward": "Unnatural Vapour Dispenser",
         "expectedGold": 101,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5665,6 +6078,7 @@
         "nodeNumber": 23,
         "reward": "Cadaere Renissum",
         "expectedGold": 101,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5695,6 +6109,7 @@
         "nodeNumber": 26,
         "reward": "Zeidos Ribbon",
         "expectedGold": 108,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5705,6 +6120,7 @@
         "nodeNumber": 27,
         "reward": "Flak Plates",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5716,6 +6132,7 @@
 
         "reward": "Blessing of Nurgle",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5726,6 +6143,7 @@
         "nodeNumber": 29,
         "reward": "Boon of Khorne",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5776,6 +6194,7 @@
         "nodeNumber": 33,
         "reward": "Mission Assignment",
         "expectedGold": 108,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5786,6 +6205,7 @@
         "nodeNumber": 34,
         "reward": "Locator Beacon",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5806,6 +6226,7 @@
         "nodeNumber": 36,
         "reward": "Artificer Tasset Plate",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5864,8 +6285,9 @@
         "campaign": "Fall of Cadia Elite",
         "campaignType": "Elite",
         "nodeNumber": 5,
-        "reward": "Advanced Filaments",
+        "reward": "Mutation: Warped Lungs",
         "expectedGold": 83,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5876,6 +6298,7 @@
         "nodeNumber": 6,
         "reward": "Blessing of the Dark Gods",
         "expectedGold": 83,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5916,6 +6339,7 @@
         "nodeNumber": 1,
         "reward": "Pile of Salvage",
         "expectedGold": 83,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5926,6 +6350,7 @@
         "nodeNumber": 10,
         "reward": "Standard-Issue Tourniquet",
         "expectedGold": 91.5,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -5956,6 +6381,7 @@
         "nodeNumber": 13,
         "reward": "Reinforced Scale-Plates",
         "expectedGold": 91.5,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6006,6 +6432,7 @@
         "nodeNumber": 18,
         "reward": "Wolf Tooth Necklace",
         "expectedGold": 101,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6018,7 +6445,9 @@
         "expectedGold": 101,
         "deployable": 5,
         "totalEnemyPower": 0,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Tyranids", "Black Templars"]
     },
     "OE2": {
         "campaign": "Octarius Elite",
@@ -6046,6 +6475,7 @@
         "nodeNumber": 21,
         "reward": "Ard Plate",
         "expectedGold": 101,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6096,6 +6526,7 @@
         "nodeNumber": 26,
         "reward": "Righteous Candle",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6136,6 +6567,7 @@
         "nodeNumber": 3,
         "reward": "Ballistics Data",
         "expectedGold": 83,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6146,6 +6578,7 @@
         "nodeNumber": 30,
         "reward": "Battle Scar",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6186,6 +6619,7 @@
         "nodeNumber": 34,
         "reward": "Enriched Rations",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6196,6 +6630,7 @@
         "nodeNumber": 35,
         "reward": "Unyielding Rivets",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6266,6 +6701,7 @@
         "nodeNumber": 5,
         "reward": "Thick Skin",
         "expectedGold": 83,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6276,6 +6712,8 @@
         "nodeNumber": 6,
         "reward": "Advanced Filaments",
         "expectedGold": 83,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6288,7 +6726,9 @@
         "expectedGold": 83,
         "deployable": 5,
         "totalEnemyPower": 0,
-        "skulls": 1
+        "skulls": 1,
+        "enemiesAlliances": ["Xenos", "Imperial"],
+        "enemiesFactions": ["Orks", "Black Templars"]
     },
     "OE8": {
         "campaign": "Octarius Elite",
@@ -6306,6 +6746,7 @@
         "nodeNumber": 9,
         "reward": "Targeting Link",
         "expectedGold": 91.5,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6376,6 +6817,8 @@
         "nodeNumber": 15,
         "reward": "Master-Crafted Ammo",
         "expectedGold": 91.5,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6394,7 +6837,7 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 17,
-        "reward": "Minor Bionic Enhancement",
+        "reward": "Motive Force Capacitator",
         "expectedGold": 101,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -6404,8 +6847,10 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 18,
-        "reward": "Waystone",
+        "reward": "Bladesman's Honour",
         "expectedGold": 101,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6414,7 +6859,7 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 19,
-        "reward": "Psytronome",
+        "reward": "The Silver Eagle with Swords",
         "expectedGold": 101,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -6434,7 +6879,7 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 20,
-        "reward": "Wraithbone Plate",
+        "reward": "Sensor Suitete",
         "expectedGold": 101,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -6444,7 +6889,7 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 21,
-        "reward": "Warp Locus",
+        "reward": "Adamantium Filaments",
         "expectedGold": 101,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -6454,7 +6899,7 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 22,
-        "reward": "Runes of Fate",
+        "reward": "Cogwheel Crest",
         "expectedGold": 101,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -6464,7 +6909,7 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 23,
-        "reward": "Codex Astartes Page",
+        "reward": "Purity Seal",
         "expectedGold": 101,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -6494,7 +6939,7 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 26,
-        "reward": "Basic Auxiliary Core",
+        "reward": "Drone Controller",
         "expectedGold": 108,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -6504,8 +6949,10 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 27,
-        "reward": "Nasty Spikes",
+        "reward": "Basic Auxiliary Core",
         "expectedGold": 108,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6514,8 +6961,10 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 28,
-        "reward": "Targeting Link",
+        "reward": "Blessed Cogitator",
         "expectedGold": 108,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6604,7 +7053,7 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 36,
-        "reward": "Sensor Suite",
+        "reward": "Greater Reliquary of Vengeance",
         "expectedGold": 108,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -6614,8 +7063,10 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 37,
-        "reward": "Drone Controller",
+        "reward": "Codex Astartes Page",
         "expectedGold": 108,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6636,6 +7087,8 @@
         "nodeNumber": 39,
         "reward": "Master-Crafted Ammo",
         "expectedGold": 108,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6644,7 +7097,7 @@
         "campaign": "Indomitus Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 4,
-        "reward": "Nano Swarm",
+        "reward": "Artificial Vertebrae",
         "expectedGold": 83,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -6656,6 +7109,8 @@
         "nodeNumber": 40,
         "reward": "Marneus Calgar",
         "expectedGold": 108,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6666,6 +7121,8 @@
         "nodeNumber": 5,
         "reward": "Hypermaterial Shifter",
         "expectedGold": 83,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6676,6 +7133,8 @@
         "nodeNumber": 6,
         "reward": "Engrammatic Entangler",
         "expectedGold": 83,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6706,6 +7165,8 @@
         "nodeNumber": 9,
         "reward": "Weapon Anointment Oils",
         "expectedGold": 91.5,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Ultramarines"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6716,6 +7177,7 @@
         "nodeNumber": 1,
         "reward": "Pile of Salvage",
         "expectedGold": 83,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6746,6 +7208,7 @@
         "nodeNumber": 12,
         "reward": "Standard-Issue Tourniquet",
         "expectedGold": 91.5,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6756,6 +7219,7 @@
         "nodeNumber": 13,
         "reward": "Plague Bell",
         "expectedGold": 91.5,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6766,6 +7230,7 @@
         "nodeNumber": 14,
         "reward": "Golden Ornamental Skull",
         "expectedGold": 91.5,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6806,6 +7271,7 @@
         "nodeNumber": 18,
         "reward": "Chapter Pendant",
         "expectedGold": 101,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6826,6 +7292,7 @@
         "nodeNumber": 2,
         "reward": "Zeidos Ribbon",
         "expectedGold": 83,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6846,6 +7313,7 @@
         "nodeNumber": 21,
         "reward": "The Iron Phoenix",
         "expectedGold": 101,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6896,6 +7364,7 @@
         "nodeNumber": 26,
         "reward": "Unnatural Vapour Dispenser",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6916,6 +7385,7 @@
         "nodeNumber": 28,
         "reward": "Holy Chaplet",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6926,6 +7396,7 @@
         "nodeNumber": 29,
         "reward": "Stone Guardian Fragment",
         "expectedGold": 108,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -6936,6 +7407,7 @@
         "nodeNumber": 3,
         "reward": "Entrenching Tool",
         "expectedGold": 83,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7006,6 +7478,7 @@
         "nodeNumber": 36,
         "reward": "Blasphemous Armor Trim",
         "expectedGold": 108,
+        "slots": 3,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7024,8 +7497,9 @@
         "campaign": "Fall of Cadia Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 38,
-        "reward": "Psyk-Conductive Material",
+        "reward": "Warp Locus",
         "expectedGold": 108,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7034,7 +7508,7 @@
         "campaign": "Fall of Cadia Mirror Elite",
         "campaignType": "Elite",
         "nodeNumber": 39,
-        "reward": "Relic Hilt",
+        "reward": "Psyk-Conductive Material",
         "expectedGold": 108,
         "deployable": 5,
         "totalEnemyPower": 0,
@@ -7066,6 +7540,7 @@
         "nodeNumber": 5,
         "reward": "Blessed Promethium Canister",
         "expectedGold": 83,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7106,6 +7581,7 @@
         "nodeNumber": 9,
         "reward": "Weapon Parts",
         "expectedGold": 91.5,
+        "slots": 4,
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7306,6 +7782,8 @@
         "nodeNumber": 27,
         "reward": "Canister of Chemicals",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7316,6 +7794,8 @@
         "nodeNumber": 28,
         "reward": "Synaptic Augmentation",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7326,6 +7806,8 @@
         "nodeNumber": 29,
         "reward": "Mjod",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7346,6 +7828,8 @@
         "nodeNumber": 30,
         "reward": "Stone Guardian Fragment",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7356,6 +7840,8 @@
         "nodeNumber": 31,
         "reward": "Round of Ammo",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7376,6 +7862,8 @@
         "nodeNumber": 33,
         "reward": "Chip Damage",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks", "Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7386,6 +7874,8 @@
         "nodeNumber": 34,
         "reward": "Bad Moon Teef",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks", "Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7396,6 +7886,8 @@
         "nodeNumber": 35,
         "reward": "Iron Jaw",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks", "Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7406,6 +7898,8 @@
         "nodeNumber": 36,
         "reward": "Ard Plate",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks", "Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7416,6 +7910,8 @@
         "nodeNumber": 37,
         "reward": "Kustom Gubbinz",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks", "Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7426,6 +7922,8 @@
         "nodeNumber": 38,
         "reward": "Purity Seal of the Primarch",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks", "Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7436,6 +7934,8 @@
         "nodeNumber": 39,
         "reward": "Archeotech Bionics",
         "expectedGold": 108,
+        "enemiesAlliances": ["Xenos"],
+        "enemiesFactions": ["Orks", "Tyranids"],
         "deployable": 5,
         "totalEnemyPower": 0,
         "skulls": 1
@@ -7516,6 +8016,7 @@
         "nodeNumber": 1,
         "reward": "Mutation: Warped Muscles",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 136,
         "skulls": 1
@@ -7526,6 +8027,7 @@
         "nodeNumber": 2,
         "reward": "Nasty Spikes",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 170,
         "skulls": 1
@@ -7536,6 +8038,7 @@
         "nodeNumber": 3,
         "reward": "Sophisticated Material",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 204,
         "skulls": 1
@@ -7546,6 +8049,7 @@
         "nodeNumber": 4,
         "reward": "Can of Promethium",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 231,
         "skulls": 1
@@ -7556,6 +8060,7 @@
         "nodeNumber": 5,
         "reward": "Armor Trim",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 264,
         "skulls": 1
@@ -7566,6 +8071,7 @@
         "nodeNumber": 6,
         "reward": "Scrolls",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 272,
         "skulls": 1
@@ -7576,6 +8082,7 @@
         "nodeNumber": 7,
         "reward": "Mission Assignment",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 288,
         "skulls": 1
@@ -7586,6 +8093,7 @@
         "nodeNumber": 8,
         "reward": "Adamantium Filaments",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 309,
         "skulls": 1
@@ -7596,6 +8104,7 @@
         "nodeNumber": 9,
         "reward": "Thick Skin",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 313,
         "skulls": 1
@@ -7606,6 +8115,7 @@
         "nodeNumber": 10,
         "reward": "Targeting Link",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 330,
         "skulls": 1
@@ -7616,6 +8126,7 @@
         "nodeNumber": 11,
         "reward": "Single Power Pack",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 330,
         "skulls": 1
@@ -7626,6 +8137,7 @@
         "nodeNumber": 12,
         "reward": "Adamantium Ore",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 332,
         "skulls": 1
@@ -7636,6 +8148,7 @@
         "nodeNumber": 13,
         "reward": "Mutation: Warped Lungs",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 336,
         "skulls": 1
@@ -7646,6 +8159,7 @@
         "nodeNumber": 14,
         "reward": "Mutation: Warped Heart",
         "expectedGold": 53,
+        "slots": 3,
         "deployable": 3,
         "totalEnemyPower": 336,
         "skulls": 1
@@ -7658,7 +8172,8 @@
         "expectedGold": 59,
         "deployable": 3,
         "totalEnemyPower": 432,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3
     },
     "SHM16": {
         "campaign": "Saim-Hann Mirror",
@@ -7668,7 +8183,8 @@
         "expectedGold": 59,
         "deployable": 3,
         "totalEnemyPower": 361,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3
     },
     "SHM17": {
         "campaign": "Saim-Hann Mirror",
@@ -7688,7 +8204,8 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 493,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4
     },
     "SHM19": {
         "campaign": "Saim-Hann Mirror",
@@ -7698,7 +8215,8 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 636,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4
     },
     "SHM20": {
         "campaign": "Saim-Hann Mirror",
@@ -7708,7 +8226,8 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 721,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4
     },
     "SHM21": {
         "campaign": "Saim-Hann Mirror",
@@ -7718,7 +8237,8 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 747,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4
     },
     "SHM22": {
         "campaign": "Saim-Hann Mirror",
@@ -7728,7 +8248,8 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 833,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4
     },
     "SHM23": {
         "campaign": "Saim-Hann Mirror",
@@ -7738,7 +8259,8 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 876,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4
     },
     "SHM24": {
         "campaign": "Saim-Hann Mirror",
@@ -7748,7 +8270,8 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 916,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4
     },
     "SHM25": {
         "campaign": "Saim-Hann Mirror",
@@ -7758,7 +8281,8 @@
         "expectedGold": 59,
         "deployable": 3,
         "totalEnemyPower": 803,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 3
     },
     "SHM26": {
         "campaign": "Saim-Hann Mirror",
@@ -7788,7 +8312,8 @@
         "expectedGold": 59,
         "deployable": 4,
         "totalEnemyPower": 1164,
-        "skulls": 1
+        "skulls": 1,
+        "slots": 4
     },
     "SHM29": {
         "campaign": "Saim-Hann Mirror",
@@ -7815,7 +8340,8 @@
         "campaignType": "Mirror",
         "nodeNumber": 31,
         "reward": "Wraithbone Plate",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 4
     },
     "SHM32": {
         "campaign": "Saim-Hann Mirror",
@@ -7850,14 +8376,16 @@
         "campaignType": "Mirror",
         "nodeNumber": 36,
         "reward": "Ballistics Data",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 4
     },
     "SHM37": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 37,
         "reward": "Canister of Chemicals",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 3
     },
     "SHM38": {
         "campaign": "Saim-Hann Mirror",
@@ -7871,14 +8399,16 @@
         "campaignType": "Mirror",
         "nodeNumber": 39,
         "reward": "Rebreather",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 4
     },
     "SHM40": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 40,
         "reward": "Brazen Jaws",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 4
     },
     "SHM41": {
         "campaign": "Saim-Hann Mirror",
@@ -7927,42 +8457,54 @@
         "campaignType": "Mirror",
         "nodeNumber": 47,
         "reward": "Box of Salvage",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 4,
+        "enemiesAlliances": ["Imperial", "Xenos"],
+        "enemiesFactions": ["Astra Militarum", "Aeldari"]
     },
     "SHM48": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 48,
         "reward": "Standard-Issue Tourniquet",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 4,
+        "enemiesAlliances": ["Imperial", "Xenos"],
+        "enemiesFactions": ["Astra Militarum", "Aeldari"]
     },
     "SHM49": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 49,
         "reward": "The Gold Phoenix",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 3,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"]
     },
     "SHM50": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 50,
         "reward": "Weapon Anointment Oils",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 3
     },
     "SHM51": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 51,
         "reward": "Combat Stimms",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 3
     },
     "SHM52": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 52,
         "reward": "Chainaxe Teeth",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 4
     },
     "SHM53": {
         "campaign": "Saim-Hann Mirror",
@@ -7976,28 +8518,32 @@
         "campaignType": "Mirror",
         "nodeNumber": 54,
         "reward": "Valuable Fabric",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 3
     },
     "SHM55": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 55,
         "reward": "Locator Beacon",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 3
     },
     "SHM56": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 56,
         "reward": "Purity Seal",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 4
     },
     "SHM57": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
         "nodeNumber": 57,
         "reward": "Waystone",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "slots": 4
     },
     "SHM58": {
         "campaign": "Saim-Hann Mirror",
@@ -8018,219 +8564,300 @@
         "campaignType": "Mirror",
         "nodeNumber": 60,
         "reward": "Jain Zar",
-        "expectedGold": 53
+        "expectedGold": 53,
+        "deployable": 5,
+        "totalEnemyPower": 1548
     },
-    "SHM31": {
+    "SHM61": {
         "campaign": "Saim-Hann Mirror",
         "campaignType": "Mirror",
-        "nodeNumber": 31,
+        "nodeNumber": 61,
+        "reward": "Satchel",
+        "expectedGold": 53
+    },
+    "SHM62": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 62,
+        "reward": "Mutation: Tough Skin",
+        "expectedGold": 53
+    },
+    "SHM63": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 63,
+        "reward": "Cadaere Renissum",
+        "slots": 4,
+        "expectedGold": 53
+    },
+    "SHM64": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 64,
+        "reward": "Boon of Khorne",
+        "slots": 4,
+        "expectedGold": 53
+    },
+    "SHM65": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 65,
+        "reward": "Divinator Class Auspex",
+        "expectedGold": 53
+    },
+    "SHM66": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 66,
+        "reward": "Weapon Anointment Oils",
+        "slots": 4,
+        "expectedGold": 53
+    },
+    "SHM67": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 67,
+        "reward": "Reliquary of Protection",
+        "slots": 3,
+        "expectedGold": 53
+    },
+    "SHM68": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 68,
+        "reward": "The Silver Eagle with Swords",
+        "expectedGold": 53
+    },
+    "SHM69": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 69,
+        "reward": "Blessed Promethium Canister",
+        "expectedGold": 53
+    },
+    "SHM70": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 70,
+        "reward": "The Silver Scope",
+        "expectedGold": 53
+    },
+    "SHM71": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 71,
+        "reward": "Battle Scar",
+        "expectedGold": 53
+    },
+    "SHM72": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 72,
+        "reward": "Runes of Fate",
+        "expectedGold": 53
+    },
+    "SHM73": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 73,
+        "reward": "Secret Agenda",
+        "expectedGold": 53
+    },
+    "SHM74": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 74,
+        "reward": "Blessing of Tzeentch",
+        "expectedGold": 53
+    },
+    "SHM75": {
+        "campaign": "Saim-Hann Mirror",
+        "campaignType": "Mirror",
+        "nodeNumber": 75,
+        "reward": "Maugan Ra",
+        "expectedGold": 53
+    },
+    "SHE1": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 1,
+        "slots": 4,
+        "reward": "Plasma Cell",
+        "expectedGold": 53
+    },
+    "SHE2": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 2,
+        "reward": "Waystone",
+        "expectedGold": 53
+    },
+    "SHE3": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 3,
+        "reward": "Psytronome",
+        "expectedGold": 53
+    },
+    "SHE4": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 4,
         "reward": "Wraithbone Plate",
         "expectedGold": 53
     },
-    "SHM32": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 32,
-        "reward": "Tainted Text",
+    "SHE5": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 5,
+        "slots": 3,
+        "reward": "Advanced Filaments",
         "expectedGold": 53
     },
-    "SHM33": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 33,
-        "reward": "Mutation: Tough Skin",
+    "SHE6": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 6,
+        "reward": "Runes of Fate",
         "expectedGold": 53
     },
-    "SHM34": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 34,
-        "reward": "The Silver Aquila",
+    "SHE7": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 7,
+        "slots": 4,
+        "reward": "Ancient Runes",
         "expectedGold": 53
     },
-    "SHM35": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 35,
+    "SHE8": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 8,
+        "reward": "Toth",
+        "expectedGold": 53
+    },
+    "SHE9": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 9,
+        "slots": 4,
+        "reward": "Mesh Weave",
+        "expectedGold": 53
+    },
+    "SHE10": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 10,
+        "slots": 3,
+        "reward": "The Iron Phoenix",
+        "expectedGold": 53
+    },
+    "SHE11": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 11,
         "reward": "Lesser Reliquary of Protection",
         "expectedGold": 53
     },
-    "SHM36": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 36,
-        "reward": "Ballistics Data",
+    "SHE12": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 12,
+        "reward": "Wolf Tail Talisman",
         "expectedGold": 53
     },
-    "SHM37": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 37,
-        "reward": "Canister of Chemicals",
+    "SHE13": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 13,
+        "reward": "Key of Ignorance",
         "expectedGold": 53
     },
-    "SHM38": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 38,
-        "reward": "Mission Assignment",
+    "SHE14": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 14,
+        "reward": "Attack Vector Data-Slate",
         "expectedGold": 53
     },
-    "SHM39": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 39,
-        "reward": "Rebreather",
-        "expectedGold": 53
-    },
-    "SHM40": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 40,
-        "reward": "Brazen Jaws",
-        "expectedGold": 53
-    },
-    "SHM41": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 41,
-        "reward": "Helmet Trophy",
-        "expectedGold": 53
-    },
-    "SHM42": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 42,
+    "SHE15": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 15,
         "reward": "Classified Data-Slate",
         "expectedGold": 53
     },
-    "SHM43": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 43,
-        "reward": "Psytronome",
+    "SHE16": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 16,
+        "reward": "Abraxas",
         "expectedGold": 53
     },
-    "SHM44": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 44,
-        "reward": "Inferno Bolts",
+    "SHE17": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 17,
+        "slots": 4,
+        "reward": "Canister of Chemicals",
+        "expectedGold": 53,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"]
+    },
+    "SHE18": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 18,
+        "slots": 3,
+        "reward": "The Silver Eagle with Swords",
+        "expectedGold": 53,
+        "enemiesAlliances": ["Imperial"],
+        "enemiesFactions": ["Astra Militarum"]
+    },
+    "SHE19": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 19,
+        "reward": "Wolf Tooth Necklace",
         "expectedGold": 53
     },
-    "SHM45": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 45,
-        "reward": "Eldryon",
+    "SHE20": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 20,
+        "slots": 4,
+        "reward": "Chapter Pendant",
         "expectedGold": 53
     },
-    "SHM46": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 46,
-        "reward": "Bladesman's Honour",
+    "SHE21": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 21,
+        "reward": "Writings",
         "expectedGold": 53
     },
-    "SHM47": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 47,
-        "reward": "Box of Salvage",
+    "SHE22": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 22,
+        "slots": 4,
+        "reward": "Nano Swarm",
         "expectedGold": 53
     },
-    "SHM48": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 48,
-        "reward": "Standard-Issue Tourniquet",
+    "SHE23": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 23,
+        "slots": 4,
+        "reward": "The Silver Scope",
         "expectedGold": 53
     },
-    "SHM49": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 49,
-        "reward": "The Gold Phoenix",
+    "SHE24": {
+        "campaign": "Saim-Hann Elite",
+        "campaignType": "Elite",
+        "nodeNumber": 24,
+        "slots": 4,
+        "reward": "Yazaghor",
         "expectedGold": 53
-    },
-    "SHM50": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 50,
-        "reward": "Weapon Anointment Oils",
-        "expectedGold": 53
-    },
-    "SHM51": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 51,
-        "reward": "Combat Stimms",
-        "expectedGold": 53
-    },
-    "SHM52": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 52,
-        "reward": "Chainaxe Teeth",
-        "expectedGold": 53
-    },
-    "SHM53": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 53,
-        "reward": "Oath Seal",
-        "expectedGold": 53
-    },
-    "SHM54": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 54,
-        "reward": "Valuable Fabric",
-        "expectedGold": 53
-    },
-    "SHM55": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 55,
-        "reward": "Locator Beacon",
-        "expectedGold": 53
-    },
-    "SHM56": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 56,
-        "reward": "Purity Seal",
-        "expectedGold": 53
-    },
-    "SHM57": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 57,
-        "reward": "Waystone",
-        "expectedGold": 53
-    },
-    "SHM58": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 58,
-        "reward": "Ritual Implements",
-        "expectedGold": 53
-    },
-    "SHM59": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 59,
-        "reward": "Revered Talisman",
-        "expectedGold": 53
-    },
-    "SHM60": {
-        "campaign": "Saim-Hann Mirror",
-        "campaignType": "Mirror",
-        "nodeNumber": 60,
-        "reward": "Jain Zar",
-        "expectedGold": 65,
-        "deployable": 5,
-        "totalEnemyPower": 1548,
-        "skulls": 1
     }
 }

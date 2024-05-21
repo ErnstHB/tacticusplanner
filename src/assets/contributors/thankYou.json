@@ -2,7 +2,7 @@
     {
         "name": "sonsonVallano",
         "type": "Contributor",
-        "thankYou": "Thank you for providing decent feedback and being Alpha,Beta,Gamma QA :)",
+        "thankYou": "Thank you for providing decent feedback and being Alpha,Beta,Gamma QA :) ©Severyn",
         "resourceDescription": "Public Upgrade Calc",
         "resourceLink": "https://docs.google.com/spreadsheets/d/1wq-CjAXkTkEKAtkI7lnpf3Yliv8qpoANW43YE21hlgg/edit",
         "avatarIcon": "none.png"
@@ -10,7 +10,7 @@
     {
         "name": "Towen",
         "type": "Contributor",
-        "thankYou": "Thank you for sharing Characters images",
+        "thankYou": "Thank you for sharing Characters images ©Severyn",
         "resourceDescription": "EN Labs T.A.C.T.I.C.U.S.",
         "resourceLink": "https://docs.google.com/spreadsheets/u/0/d/1al2IWwvTP3QOhHtfr6P8stdlA48ED4JFrtK8wDKznrk/htmlview",
         "avatarIcon": "towen.webp"
@@ -18,7 +18,7 @@
     {
         "name": "Un/Lucky☆SirEldricIV",
         "type": "Contributor",
-        "thankYou": "Thank you for sharing Ranks images",
+        "thankYou": "Thank you for sharing Ranks images ©Severyn",
         "resourceDescription": "Tacticus Wiki",
         "resourceLink": "https://tacticus.fandom.com/wiki/Tacticus_Wiki",
         "avatarIcon": "lucky.webp"
@@ -26,7 +26,7 @@
     {
         "name": "YourAdHere",
         "type": "Contributor",
-        "thankYou": "Thank you for contributing into Tacticus Planner",
+        "thankYou": "Thank you for contributing into Tacticus Planner ©Severyn",
         "resourceDescription": "",
         "resourceLink": "",
         "avatarIcon": "yourAdHere.webp"
@@ -34,9 +34,230 @@
     {
         "name": "Lëonaica",
         "type": "Contributor",
-        "thankYou": "Thank you for contributing into Tacticus Planner",
+        "thankYou": "Thank you for contributing into Tacticus Planner ©Severyn",
         "resourceDescription": "",
         "resourceLink": "",
         "avatarIcon": "leonaica.webp"
+    },
+    {
+        "name": "SeventhSun",
+        "type": "Contributor",
+        "thankYou": "Thank you for finding nasty bugs and suggesting decent features ©Severyn",
+        "resourceDescription": "",
+        "resourceLink": "",
+        "avatarIcon": "seventhSun.webp"
+    },
+    {
+        "name": "Tani",
+        "type": "Contributor",
+        "thankYou": "Thank you for supporting the app with your time and ideas ©Severyn",
+        "resourceDescription": "",
+        "resourceLink": "",
+        "avatarIcon": "tani.webp"
+    },
+    {
+        "name": "KIVIY",
+        "type": "Contributor",
+        "thankYou": "Thank you for finding upgrades images and promoting exitor for me\uD83D\uDE05 ©Severyn",
+        "resourceDescription": "",
+        "resourceLink": "",
+        "avatarIcon": "kiviy.webp"
+    },
+    {
+        "name": "Tani",
+        "type": "Supporter",
+        "thankYou": "You do such great work and handle feedback amazingly.\n\nLove the app! Hope many support you.",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "SeventhSun",
+        "type": "Supporter",
+        "thankYou": "The amount of stress this thing has saved me is truly extraordinary.",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "LSHarbo",
+        "type": "Supporter",
+        "thankYou": "",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Lëonaica",
+        "type": "Supporter",
+        "thankYou": "Having a great time figuring out how your magic works, and how to extend it just a little bit more ;-)",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "@turbosnackage",
+        "type": "Supporter",
+        "thankYou": "Great planner- thanks!",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Ivan",
+        "type": "Supporter",
+        "thankYou": "something nice",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Tim",
+        "type": "Supporter",
+        "thankYou": "Great app. Happy to support.",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Someone",
+        "type": "Supporter",
+        "thankYou": "",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "maddoc",
+        "type": "Supporter",
+        "thankYou": "Thanks for your efforts, SP owes you a lot for such a great tool you make for their app. Big thumbs up!",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Landon",
+        "type": "Supporter",
+        "thankYou": "Great job with the planner. Helps me a lot.\n\nSlava Ukraini",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Piwakawaka",
+        "type": "Supporter",
+        "thankYou": "Amazing work, this is a sensational resource. Thank you.",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Murky",
+        "type": "Supporter",
+        "thankYou": "Keep up the great work!",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "markRom",
+        "type": "Supporter",
+        "thankYou": "Thank you for such a great tool! Slava Ukraini!",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "James Workshop (no relation)",
+        "type": "Trooper",
+        "thankYou": "Cheers! The effort you put in is extraordinary.",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Benny",
+        "type": "Trooper",
+        "thankYou": "So grateful to your for this app, it's made playing Tacticus even better!",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "cybermephit",
+        "type": "Supporter",
+        "thankYou": "Great tool, allows to make the most out of the game.",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Eager",
+        "type": "Supporter",
+        "thankYou": "something nice",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "MarkJ",
+        "type": "Hero",
+        "thankYou": "Excellent tool, extremely useful for managing roster and events.",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Sort of Purple",
+        "type": "Supporter",
+        "thankYou": "Thanks for making the grind easier and more efficient",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "April 2024 Referrals",
+        "type": "TIE-62-TAT",
+        "thankYou": "Borellun",
+        "avatarIcon": "ref.webp",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Niko Lowsky",
+        "type": "Supporter",
+        "thankYou": "Great App. Spending almost as much time here as in Tacticus \uD83D\uDE05",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Someone",
+        "type": "Supporter",
+        "thankYou": "You are awesome.",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "@JRC",
+        "type": "Supporter",
+        "thankYou": "Hi Severyn, this is such a useful app! Thank you for your commitment to the Tacticus Community.",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "SaberKhan",
+        "type": "Trooper",
+        "thankYou": "Роби вже обнову з Аватором і Екзітором))",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Someone",
+        "type": "Supporter",
+        "thankYou": "Excellent app - thanks for all you do for the community by maintaining this. Slava Ukraini",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Espada",
+        "type": "Supporter",
+        "thankYou": "Awesome app, thank for putting it together",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "@DocSyn",
+        "type": "Hero",
+        "thankYou": "Слава Україні!",
+        "resourceDescription": "",
+        "resourceLink": ""
+    },
+    {
+        "name": "Tim",
+        "type": "Trooper",
+        "thankYou": "Already donated but this if for the new update. Keep it up.",
+        "resourceDescription": "",
+        "resourceLink": ""
     }
 ]

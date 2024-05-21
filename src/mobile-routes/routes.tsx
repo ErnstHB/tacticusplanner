@@ -10,6 +10,11 @@ import { insightsLazyRoute } from 'src/v2/pages/insights/insights.route';
 import { wyoLazyRoute } from 'src/v2/pages/who-you-own/who-you-own.route';
 import { sharedRosterRoute } from 'src/v2/pages/shared-roster/shared-roster.route';
 import LegendaryEvent from 'src/routes/legendary-events/legendary-event';
+import { guildWarOffenseLazyRoute } from 'src/v2/pages/guild-war-offense/guild-war-offense.route';
+import { guildWarDefenseLazyRoute } from 'src/v2/pages/guild-war-defense/guild-war-defense.route';
+import { guildWarZonesLazyRoute } from 'src/v2/pages/guild-war-layout/guild-war-zones.route';
+import { guildLazyRoute } from 'src/v2/pages/guild/guild.route';
+import { guildInsightsLazyRoute } from 'src/v2/pages/guild-insights/guild-insights.route';
 
 const inputRoutes: RouteObject[] = [
     {
@@ -34,6 +39,7 @@ const inputRoutes: RouteObject[] = [
             return { Component: Inventory };
         },
     },
+    guildLazyRoute,
 ];
 
 const planRoutes: RouteObject[] = [
@@ -42,6 +48,20 @@ const planRoutes: RouteObject[] = [
         async lazy() {
             const { PlanRoutes } = await import('./events/planRoutes');
             return { Component: PlanRoutes };
+        },
+    },
+    {
+        path: 'plan/lre',
+        async lazy() {
+            const { PlanLeRoutes } = await import('./events/leRoutes');
+            return { Component: PlanLeRoutes };
+        },
+    },
+    {
+        path: 'plan/guildWar',
+        async lazy() {
+            const { PlanGuildWarRoutes } = await import('./events/guildWarRoutes');
+            return { Component: PlanGuildWarRoutes };
         },
     },
     {
@@ -65,6 +85,9 @@ const planRoutes: RouteObject[] = [
             return { Component: MasterTable };
         },
     },
+    guildWarOffenseLazyRoute,
+    guildWarDefenseLazyRoute,
+    guildWarZonesLazyRoute,
     {
         path: 'plan/le',
         async lazy() {
@@ -87,6 +110,10 @@ const planRoutes: RouteObject[] = [
             {
                 path: 'vitruvius',
                 element: <LegendaryEvent id={LegendaryEventEnum.Vitruvius} />,
+            },
+            {
+                path: 'kharn',
+                element: <LegendaryEvent id={LegendaryEventEnum.Kharn} />,
             },
         ],
     },
@@ -130,6 +157,7 @@ const learnRoutes: RouteObject[] = [
     },
     dirtyDozenLazyRoute,
     insightsLazyRoute,
+    guildInsightsLazyRoute,
 ];
 
 export const mobileAppRoutes: () => RouteObject[] = () => [

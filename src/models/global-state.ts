@@ -12,9 +12,11 @@
     IPersonalCharacterData2,
     IPersonalData2,
     IPersonalGoal,
+    IGuildWar,
     ISelectedTeamsOrdering,
     IViewPreferences,
     LegendaryEventData,
+    IGuild,
 } from './interfaces';
 import { StaticDataService } from '../services';
 import { CharacterBias, LegendaryEventEnum, Rank, Rarity, RarityStars } from './enums';
@@ -36,6 +38,8 @@ export class GlobalState implements IGlobalState {
     readonly campaignsProgress: ICampaignsProgress;
     readonly inventory: IInventory;
     readonly dailyRaids: IDailyRaids;
+    readonly guildWar: IGuildWar;
+    readonly guild: IGuild;
 
     constructor(personalData: IPersonalData2) {
         this.viewPreferences = personalData.viewPreferences ?? defaultData.viewPreferences;
@@ -65,10 +69,12 @@ export class GlobalState implements IGlobalState {
         this.campaignsProgress = personalData.campaignsProgress ?? defaultData.campaignsProgress;
         this.inventory = GlobalState.fixNames(personalData.inventory ?? defaultData.inventory);
         this.dailyRaids = personalData.dailyRaids ?? defaultData.dailyRaids;
+        this.guildWar = personalData.guildWar ?? defaultData.guildWar;
+        this.guild = personalData.guild ?? defaultData.guild;
     }
 
     static initCharacters(
-        chars: Partial<IPersonalCharacterData2 & { numberOfUnlocked?: number }>[],
+        chars: Partial<IPersonalCharacterData2 & { numberOfUnlocked?: number; ownedBy?: string[] }>[],
         totalUsers?: number
     ): Array<ICharacter2> {
         return StaticDataService.unitsData.map(staticData => {
@@ -106,6 +112,7 @@ export class GlobalState implements IGlobalState {
                     totalUsers && personalCharData?.numberOfUnlocked
                         ? Math.ceil((personalCharData.numberOfUnlocked / totalUsers) * 100)
                         : undefined,
+                ownedBy: personalCharData?.ownedBy ?? [],
             };
         });
     }
@@ -172,6 +179,8 @@ export class GlobalState implements IGlobalState {
             campaignsProgress: value.campaignsProgress,
             inventory: value.inventory,
             dailyRaids: value.dailyRaids,
+            guildWar: value.guildWar,
+            guild: value.guild,
         };
     }
 }

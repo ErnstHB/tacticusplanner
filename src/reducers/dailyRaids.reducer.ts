@@ -1,17 +1,21 @@
-﻿import { IDailyRaids, IMaterialRaid, IRaidLocation, SetStateAction } from '../models/interfaces';
+﻿import { IDailyRaids, IDailyRaidsFilters, SetStateAction } from '../models/interfaces';
 import { defaultData } from '../models/constants';
+import { IItemRaidLocation } from 'src/v2/features/goals/goals.models';
 
 export type DailyRaidsAction =
     | {
           type: 'AddCompletedBattle';
-          location: IRaidLocation;
-          material: IMaterialRaid;
+          location: IItemRaidLocation;
       }
     | {
           type: 'ResetCompletedBattles';
       }
     | {
           type: 'ResetCompletedBattlesDaily';
+      }
+    | {
+          type: 'UpdateFilters';
+          value: IDailyRaidsFilters;
       }
     | SetStateAction<IDailyRaids>;
 
@@ -21,38 +25,26 @@ export const dailyRaidsReducer = (state: IDailyRaids, action: DailyRaidsAction):
             return action.value ?? defaultData.dailyRaids;
         }
         case 'AddCompletedBattle': {
-            const existingMaterialIndex = state.completedLocations.findIndex(
-                x => x.materialId === action.material.materialId
-            );
-            if (existingMaterialIndex >= 0) {
-                const existingMaterial = state.completedLocations[existingMaterialIndex];
-                if (existingMaterial.locations.some(x => x.id === action.location.id)) {
-                    return state;
-                }
-
-                state.completedLocations[existingMaterialIndex] = {
-                    ...existingMaterial,
-                    locations: [...existingMaterial.locations, action.location],
-                };
-                return {
-                    ...state,
-                    completedLocations: [...state.completedLocations],
-                };
-            }
-            action.material.locations = [action.location];
             return {
                 ...state,
-                completedLocations: [...state.completedLocations, action.material],
+                raidedLocations: [...state.raidedLocations, action.location],
             };
         }
         case 'ResetCompletedBattles': {
-            return { ...state, completedLocations: [] };
+            return { ...state, raidedLocations: [] };
         }
         case 'ResetCompletedBattlesDaily': {
             return {
                 ...state,
-                completedLocations: [],
+                raidedLocations: [],
                 lastRefreshDateUTC: new Date().toUTCString(),
+            };
+        }
+        case 'UpdateFilters': {
+            const { value } = action;
+            return {
+                ...state,
+                filters: value,
             };
         }
         default: {

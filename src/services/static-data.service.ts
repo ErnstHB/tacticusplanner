@@ -15,6 +15,7 @@ import shadowsun from '../assets/legendary-events/Shadowsun.json';
 import aunshi from '../assets/legendary-events/Aunshi.json';
 import ragnar from '../assets/legendary-events/Ragnar.json';
 import vitruvius from '../assets/legendary-events/Vitruvius.json';
+import kharn from '../assets/legendary-events/Kharn.json';
 
 import {
     ICampaignBattle,
@@ -22,17 +23,12 @@ import {
     ICampaignConfigs,
     ICampaignsData,
     ICampaignsProgress,
-    ICharacterRankRange,
     ICharLegendaryEvents,
     IContentCreator,
     IContributor,
-    IDailyRaid,
-    IDropRate,
-    IEstimatedRanks,
     IEstimatedRanksSettings,
     IMaterialEstimated2,
     IMaterialFull,
-    IMaterialRaid,
     IMaterialRecipeIngredientFull,
     IRankUpData,
     IRecipeData,
@@ -41,9 +37,11 @@ import {
     IWhatsNew,
     UnitDataRaw,
 } from '../models/interfaces';
-import { CampaignType, Faction, Rank, RarityString } from '../models/enums';
+import { Faction, Rank, Rarity, RarityString } from '../models/enums';
 import { rarityStringToNumber, rarityToStars } from '../models/constants';
 import { getEnumValues, rankToString } from '../shared-logic/functions';
+import { CampaignsService } from 'src/v2/features/goals/campaigns.service';
+import { IRankLookup } from 'src/v2/features/goals/goals.models';
 
 export class StaticDataService {
     static readonly whatsNew: IWhatsNew = whatsNew;
@@ -53,13 +51,52 @@ export class StaticDataService {
     static readonly rankUpData: IRankUpData = rankUpData;
     static readonly contributors: IContributor[] = contributors;
     static readonly contentCreators: IContentCreator[] = contentCreators;
-    static readonly campaignsComposed: Record<string, ICampaignBattleComposed> = this.getCampaignComposed();
+
+    private static readonly ImperialFactions: Faction[] = [
+        Faction.Ultramarines,
+        Faction.Astra_militarum,
+        Faction.Black_Templars,
+        Faction.ADEPTA_SORORITAS,
+        Faction.AdeptusMechanicus,
+        Faction.Space_Wolves,
+        Faction.Dark_Angels,
+    ];
+
+    private static readonly ChaosFactions: Faction[] = [
+        Faction.Black_Legion,
+        Faction.Death_Guard,
+        Faction.Thousand_Sons,
+        Faction.WorldEaters,
+    ];
+
+    static readonly campaignsComposed: Record<string, ICampaignBattleComposed> = CampaignsService.campaignsComposed;
 
     static readonly unitsData: IUnitData[] = (unitsData as UnitDataRaw[]).map(this.convertUnitData);
     static readonly campaignsGrouped: Record<string, ICampaignBattleComposed[]> = this.getCampaignGrouped();
     static readonly recipeDataFull: IRecipeDataFull = this.convertRecipeData();
 
+    static getItemLocations = (itemId: string): ICampaignBattleComposed[] => {
+        const possibleLocations: ICampaignBattleComposed[] = [];
+        const characterShardsData = StaticDataService.recipeDataFull[itemId];
+        if (characterShardsData) {
+            const fullData = characterShardsData.allMaterials && characterShardsData.allMaterials[0];
+            if (fullData) {
+                possibleLocations.push(...(fullData.locationsComposed ?? []));
+            }
+        }
+
+        return possibleLocations;
+    };
+
     static readonly legendaryEvents = [
+        {
+            id: kharn.id,
+            name: kharn.name,
+            stage: kharn.eventStage,
+            nextEventDate: kharn.nextEventDate,
+            mobileRoute: '/mobile/plan/le/kharn',
+            icon: 'kharn.png',
+        },
         {
             id: vitruvius.id,
             name: vitruvius.name,
@@ -77,20 +114,20 @@ export class StaticDataService {
             icon: 'Ragnar.png',
         },
         {
-            id: aunshi.id,
-            name: aunshi.name,
-            stage: aunshi.eventStage,
-            nextEventDate: aunshi.nextEventDate,
-            mobileRoute: '/mobile/plan/le/aunshi',
-            icon: 'Aun-shi.png',
-        },
-        {
             id: shadowsun.id,
             name: shadowsun.name,
             stage: shadowsun.eventStage,
             nextEventDate: shadowsun.nextEventDate,
             mobileRoute: '/mobile/plan/le/shadowsun',
             icon: 'ShadowSun.png',
+        },
+        {
+            id: aunshi.id,
+            name: aunshi.name,
+            stage: aunshi.eventStage,
+            nextEventDate: aunshi.nextEventDate,
+            mobileRoute: '/mobile/plan/le/aunshi',
+            icon: 'Aun-shi.png',
         },
     ];
 
@@ -369,37 +406,13 @@ export class StaticDataService {
         }
     }
 
-    static getRankUpgradeEstimatedDays(
-        settings: IEstimatedRanksSettings,
-        ...characters: Array<ICharacterRankRange>
-    ): IEstimatedRanks {
-        const upgrades = this.getUpgrades(...characters);
-
-        const materials = this.getAllMaterials(settings, upgrades);
-
-        const raids = this.generateDailyRaidsList(
-            settings,
-            materials.filter(x => x.id !== 'Gold')
-        );
-
-        const energySpent = sum(settings.completedLocations.flatMap(x => x.locations).map(x => x.energySpent));
-        const totalEnergy = sum(raids.map(day => settings.dailyEnergy - day.energyLeft)) - energySpent;
-
-        return {
-            raids,
-            upgrades,
-            materials,
-            totalEnergy,
-        };
-    }
-
-    public static getUpgrades(...characters: Array<ICharacterRankRange>): IMaterialFull[] {
+    public static getUpgrades(...characters: Array<IRankLookup>): IMaterialFull[] {
         const rankEntries: number[] = getEnumValues(Rank).filter(x => x > 0);
         const result: IMaterialFull[] = [];
         let priority = 0;
         for (const character of characters) {
             priority++;
-            const characterUpgrades = StaticDataService.rankUpData[character.id];
+            const characterUpgrades = StaticDataService.rankUpData[character.characterName];
             if (!characterUpgrades) {
                 continue;
             }
@@ -411,6 +424,19 @@ export class StaticDataService {
                     return index === 0 ? result.filter(x => !character.appliedUpgrades.includes(x)) : result;
                 })
                 .filter(x => !!x);
+
+            // eslint-disable-next-line no-constant-condition
+            if (character.rankPoint5) {
+                const lastRankUpgrades = characterUpgrades[rankToString(character.rankEnd)];
+                if (lastRankUpgrades) {
+                    const rankPoint5Upgrades = lastRankUpgrades.filter((_, index) => (index + 1) % 2 !== 0);
+                    if (character.rankStart === character.rankEnd) {
+                        rankUpgrades.push(...rankPoint5Upgrades.filter(x => !character.appliedUpgrades.includes(x)));
+                    } else {
+                        rankUpgrades.push(...rankPoint5Upgrades);
+                    }
+                }
+            }
 
             if (!rankUpgrades.length) {
                 continue;
@@ -428,16 +454,25 @@ export class StaticDataService {
                         stat: 'Unknown',
                         id: upgrade,
                         label: upgrade,
-                        character: character.id,
+                        character: character.characterName,
                         priority,
                         recipe: [],
                         allMaterials: [],
                     };
                 }
+                const allMaterials = character.upgradesRarity.length
+                    ? recipe.allMaterials?.filter(material => character.upgradesRarity.includes(material.rarity))
+                    : recipe.allMaterials;
+
+                for (const allMaterial of allMaterials ?? []) {
+                    allMaterial.characters = [];
+                }
+
                 return {
                     ...cloneDeep(recipe),
+                    allMaterials,
                     priority,
-                    character: character.id,
+                    character: character.characterName,
                 };
             });
 
@@ -448,96 +483,19 @@ export class StaticDataService {
     }
 
     public static getAllMaterials(settings: IEstimatedRanksSettings, upgrades: IMaterialFull[]): IMaterialEstimated2[] {
-        const craftedBaseMaterials = this.inventoryToBaseUpgrades(settings.upgrades, upgrades);
-
-        if (settings.preferences?.farmByPriorityOrder) {
-            const materials: IMaterialRecipeIngredientFull[] = [];
-            const upgradesByCharacter = groupBy(upgrades, 'character');
-            for (const character in upgradesByCharacter) {
-                const characterMaterials = this.groupBaseMaterials(upgradesByCharacter[character]);
-                materials.push(...characterMaterials);
-            }
-            const copiedUpgrades = { ...settings.upgrades };
-            const copiedBaseUpgrades = { ...craftedBaseMaterials };
-            const result = materials
-                .map(x =>
-                    this.calculateMaterialData(
-                        settings.campaignsProgress,
-                        x,
-                        this.selectBestLocations(settings, x.locationsComposed ?? []),
-                        copiedUpgrades,
-                        copiedBaseUpgrades,
-                        true
-                    )
+        const result = this.groupBaseMaterials(upgrades)
+            .map(x =>
+                this.calculateMaterialData(
+                    settings.campaignsProgress,
+                    x,
+                    this.selectBestLocations(settings, x.locationsComposed ?? [], x.rarity),
+                    settings.upgrades,
+                    {}
                 )
-                .filter(x => !!x) as IMaterialEstimated2[];
+            )
+            .filter(x => !!x) as IMaterialEstimated2[];
 
-            return orderBy(
-                result,
-                ['priority', 'daysOfBattles', 'totalEnergy', 'rarity', 'count'],
-                ['asc', 'desc', 'desc', 'desc', 'desc']
-            );
-        } else {
-            const result = this.groupBaseMaterials(upgrades)
-                .map(x =>
-                    this.calculateMaterialData(
-                        settings.campaignsProgress,
-                        x,
-                        this.selectBestLocations(settings, x.locationsComposed ?? []),
-                        settings.upgrades,
-                        craftedBaseMaterials
-                    )
-                )
-                .filter(x => !!x) as IMaterialEstimated2[];
-
-            return orderBy(
-                result,
-                ['daysOfBattles', 'totalEnergy', 'rarity', 'count'],
-                ['desc', 'desc', 'desc', 'desc']
-            );
-        }
-    }
-
-    private static inventoryToBaseUpgrades(
-        inventory: Record<string, number>,
-        upgrades: IMaterialFull[]
-    ): Record<string, number> {
-        const result: Record<string, number> = {};
-
-        const itemIds: string[] = [];
-
-        function processMaterial(material: IMaterialFull) {
-            if (material.recipe?.length) {
-                material.recipe.forEach(ingredient => {
-                    itemIds.push(ingredient.id);
-                    processMaterial(ingredient);
-                });
-            }
-        }
-
-        upgrades.forEach(material => {
-            processMaterial(material);
-        });
-
-        const processItem = (itemId: string, quantity: number) => {
-            const upgrade = StaticDataService.recipeDataFull[itemId];
-
-            if (upgrade?.craftable && upgrade?.allMaterials?.length && itemIds.includes(itemId)) {
-                upgrade?.allMaterials.forEach(item => {
-                    result[item.id] = (result[item.id] ?? 0) + item.count * quantity;
-                });
-            }
-
-            if (!upgrade) {
-                console.error('Missing data for ' + itemId);
-            }
-        };
-
-        for (const itemId in inventory) {
-            processItem(itemId, inventory[itemId]);
-        }
-
-        return result;
+        return orderBy(result, ['daysOfBattles', 'totalEnergy', 'rarity', 'count'], ['desc', 'desc', 'desc', 'desc']);
     }
 
     public static groupBaseMaterials(upgrades: IMaterialFull[], keepGold = false) {
@@ -573,180 +531,6 @@ export class StaticDataService {
         return keepGold ? result : result.filter(x => x.id !== 'Gold');
     }
 
-    private static generateDailyRaidsList(
-        settings: IEstimatedRanksSettings,
-        allMaterials: IMaterialEstimated2[]
-    ): IDailyRaid[] {
-        const resultDays: IDailyRaid[] = [];
-
-        const totalEnergy = sum(allMaterials.map(x => x.totalEnergy));
-        let currEnergy = 0;
-        const completedLocations = settings.completedLocations.flatMap(x => x.locations);
-        let iteration = 0;
-
-        while (currEnergy < totalEnergy) {
-            const dayNumber = resultDays.length + 1;
-            const isToday = dayNumber === 1;
-            const day: IDailyRaid = {
-                energyLeft: settings.dailyEnergy,
-                raids: [],
-            };
-            let energyLeft = isToday
-                ? settings.dailyEnergy - sum(completedLocations.map(x => x.energySpent))
-                : settings.dailyEnergy;
-
-            for (const material of allMaterials) {
-                const isBlocked = material.locationsString === material.missingLocationsString;
-                if (energyLeft < 5) {
-                    break;
-                }
-
-                const locationsMinEnergyConst = Math.min(...material.locations.map(x => x.energyCost));
-                const isAlreadyPlanned = day.raids.some(
-                    x =>
-                        x.materialId === material.id &&
-                        x.locations.map(l => l.id).join() ===
-                            material.locations.map(location => location.campaign + location.nodeNumber).join()
-                );
-                if (isAlreadyPlanned) {
-                    continue;
-                }
-
-                if (material.totalEnergy < locationsMinEnergyConst) {
-                    currEnergy += material.totalEnergy;
-                    material.totalEnergy = 0;
-                    continue;
-                }
-
-                const materialRaids: IMaterialRaid = {
-                    materialId: material.id,
-                    materialLabel: material.label,
-                    materialIconPath: material.iconPath,
-                    materialRarity: material.rarity,
-                    totalCount: material.count,
-                    locations: [],
-                    characters: material.characters,
-                    materialRef: material,
-                };
-
-                for (const location of material.locations) {
-                    const locationDailyEnergy = location.energyCost * location.dailyBattleCount;
-                    const completedLocation =
-                        isToday &&
-                        completedLocations.find(
-                            completedLocation => completedLocation.id === location.campaign + location.nodeNumber
-                        );
-                    if (completedLocation) {
-                        materialRaids.locations.push(completedLocation);
-                        continue;
-                    }
-
-                    if (isBlocked) {
-                        if (isToday) {
-                            materialRaids.locations.push({
-                                id: location.campaign + location.nodeNumber,
-                                campaign: location.campaign,
-                                battleNumber: location.nodeNumber,
-                                raidsCount: location.dailyBattleCount,
-                                farmedItems: 0,
-                                energySpent: 0,
-                            });
-                        }
-                        continue;
-                    }
-
-                    if (material.totalEnergy > locationDailyEnergy) {
-                        if (energyLeft > locationDailyEnergy) {
-                            energyLeft -= locationDailyEnergy;
-                            currEnergy += locationDailyEnergy;
-                            material.totalEnergy -= locationDailyEnergy;
-
-                            materialRaids.locations.push({
-                                id: location.campaign + location.nodeNumber,
-                                campaign: location.campaign,
-                                battleNumber: location.nodeNumber,
-                                raidsCount: location.dailyBattleCount,
-                                farmedItems: locationDailyEnergy / location.energyPerItem,
-                                energySpent: locationDailyEnergy,
-                            });
-                            continue;
-                        }
-                    }
-
-                    if (energyLeft > material.totalEnergy) {
-                        const numberOfBattles = Math.floor(material.totalEnergy / location.energyCost);
-                        const maxNumberOfBattles =
-                            numberOfBattles > location.dailyBattleCount ? location.dailyBattleCount : numberOfBattles;
-
-                        if (numberOfBattles <= 0) {
-                            continue;
-                        }
-                        const energySpent = maxNumberOfBattles * location.energyCost;
-
-                        energyLeft -= energySpent;
-                        currEnergy += energySpent;
-                        material.totalEnergy -= energySpent;
-
-                        materialRaids.locations.push({
-                            id: location.campaign + location.nodeNumber,
-                            campaign: location.campaign,
-                            battleNumber: location.nodeNumber,
-                            raidsCount: maxNumberOfBattles,
-                            farmedItems: energySpent / location.energyPerItem,
-                            energySpent: energySpent,
-                        });
-                    } else if (energyLeft > location.energyCost) {
-                        const numberOfBattles = Math.floor(energyLeft / location.energyCost);
-                        const maxNumberOfBattles =
-                            numberOfBattles > location.dailyBattleCount ? location.dailyBattleCount : numberOfBattles;
-
-                        if (numberOfBattles <= 0) {
-                            continue;
-                        }
-
-                        const energySpent = maxNumberOfBattles * location.energyCost;
-
-                        energyLeft -= energySpent;
-                        currEnergy += energySpent;
-                        material.totalEnergy -= energySpent;
-
-                        materialRaids.locations.push({
-                            id: location.campaign + location.nodeNumber,
-                            campaign: location.campaign,
-                            battleNumber: location.nodeNumber,
-                            raidsCount: maxNumberOfBattles,
-                            farmedItems: energySpent / location.energyPerItem,
-                            energySpent: energySpent,
-                        });
-                    }
-                }
-
-                if (materialRaids.locations.length) {
-                    day.raids.push(materialRaids);
-                }
-            }
-            if (isToday) {
-                const completedMaterials = settings.completedLocations.filter(
-                    x => !day.raids.some(material => material.materialId === x.materialId)
-                );
-                day.raids.push(...completedMaterials);
-            }
-
-            day.energyLeft = energyLeft;
-            if (day.raids.length) {
-                resultDays.push(day);
-            }
-
-            iteration++;
-            if (iteration > 1000) {
-                console.error('Infinite loop', resultDays);
-                break;
-            }
-        }
-
-        return resultDays;
-    }
-
     private static calculateMaterialData(
         campaignsProgress: ICampaignsProgress,
         material: IMaterialRecipeIngredientFull,
@@ -758,6 +542,10 @@ export class StaticDataService {
         const lockedLocations = (material.locationsComposed ?? []).filter(location => {
             const campaignProgress = campaignsProgress[location.campaign as keyof ICampaignsProgress];
             return location.nodeNumber > campaignProgress;
+        });
+        const unlockedLocations = (material.locationsComposed ?? []).filter(location => {
+            const campaignProgress = campaignsProgress[location.campaign as keyof ICampaignsProgress];
+            return location.nodeNumber <= campaignProgress;
         });
         const selectedLocations = bestLocations?.length ? bestLocations : material.locationsComposed ?? [];
 
@@ -826,8 +614,11 @@ export class StaticDataService {
             id: material.id,
             label: material.label,
             locations: selectedLocations,
+            unlockedLocations: unlockedLocations.map(x => x.id),
+            possibleLocations: material.locationsComposed ?? [],
             locationsString: locations,
             missingLocationsString,
+            isBlocked: locations === missingLocationsString,
             count: material.count,
             craftedCount: craftedCount,
             rarity: material.rarity,
@@ -841,52 +632,73 @@ export class StaticDataService {
 
     private static selectBestLocations(
         settings: IEstimatedRanksSettings,
-        locationsComposed: ICampaignBattleComposed[]
+        locationsComposed: ICampaignBattleComposed[],
+        materialRarity: Rarity
     ): ICampaignBattleComposed[] {
-        const unlockedLocations = locationsComposed.filter(location => {
-            const campaignProgress = settings.campaignsProgress[location.campaign as keyof ICampaignsProgress];
-            return location.nodeNumber <= campaignProgress;
-        });
-
-        const minEnergy = Math.min(...unlockedLocations.map(x => x.energyPerItem));
-        const maxEnergy = Math.max(...unlockedLocations.map(x => x.energyPerItem));
-        const hasAnyMedianLocation = unlockedLocations.some(
-            location => location.energyPerItem > minEnergy && location.energyPerItem < maxEnergy
-        );
-
-        let filteredLocations: ICampaignBattleComposed[] = unlockedLocations;
-
-        if (settings.preferences) {
-            const { useLeastEfficientNodes, useMoreEfficientNodes, useMostEfficientNodes } = settings.preferences;
-            filteredLocations = unlockedLocations.filter(location => {
-                if (!useMostEfficientNodes && !useMoreEfficientNodes && !useLeastEfficientNodes) {
+        const unlockedLocations = locationsComposed
+            .filter(location => {
+                const campaignProgress = settings.campaignsProgress[location.campaign as keyof ICampaignsProgress];
+                return location.nodeNumber <= campaignProgress;
+            })
+            .filter(location => {
+                if (!settings.filters) {
                     return true;
                 }
+                const {
+                    alliesFactions,
+                    alliesAlliance,
+                    enemiesAlliance,
+                    enemiesFactions,
+                    campaignTypes,
+                    upgradesRarity,
+                    slotsCount,
+                } = settings.filters;
 
-                if (useMostEfficientNodes && location.energyPerItem === minEnergy) {
-                    return true;
+                if (slotsCount && slotsCount.length) {
+                    if (!slotsCount.includes(location.slots ?? 5)) {
+                        return false;
+                    }
                 }
 
-                if (
-                    useMoreEfficientNodes &&
-                    ((hasAnyMedianLocation &&
-                        location.energyPerItem > minEnergy &&
-                        location.energyPerItem < maxEnergy) ||
-                        (!hasAnyMedianLocation &&
-                            location.energyPerItem >= minEnergy &&
-                            location.energyPerItem < maxEnergy))
-                ) {
-                    return true;
+                if (upgradesRarity.length) {
+                    if (!upgradesRarity.includes(materialRarity)) {
+                        return false;
+                    }
                 }
 
-                return useLeastEfficientNodes && location.energyPerItem === maxEnergy;
+                if (campaignTypes.length) {
+                    if (!campaignTypes.includes(location.campaignType)) {
+                        return false;
+                    }
+                }
+
+                if (alliesAlliance.length) {
+                    if (!alliesAlliance.includes(location.alliesAlliance)) {
+                        return false;
+                    }
+                }
+
+                if (alliesFactions.length) {
+                    if (!location.alliesFactions.some(faction => alliesFactions.includes(faction))) {
+                        return false;
+                    }
+                }
+
+                if (enemiesAlliance.length) {
+                    if (!location.enemiesAlliances.some(alliance => enemiesAlliance.includes(alliance))) {
+                        return false;
+                    }
+                }
+
+                if (enemiesFactions.length) {
+                    if (!location.enemiesFactions.some(faction => enemiesFactions.includes(faction))) {
+                        return false;
+                    }
+                }
+
+                return true;
             });
 
-            if (!filteredLocations.length && unlockedLocations.length) {
-                filteredLocations = [unlockedLocations[0]];
-            }
-        }
-
-        return orderBy(filteredLocations, ['energyPerItem', 'expectedGold'], ['asc', 'desc']);
+        return orderBy(unlockedLocations, ['energyPerItem', 'expectedGold'], ['asc', 'desc']);
     }
 }

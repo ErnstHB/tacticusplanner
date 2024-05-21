@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Badge, Divider, ListItemIcon, Menu, MenuItem, Tooltip, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { discordInvitationLink, isTabletOrMobileMediaQuery } from './models/constants';
+import { bmcLink, discordInvitationLink, isTabletOrMobileMediaQuery } from './models/constants';
 import { usePopUpControls } from './hooks/pop-up-controls';
 import { UserMenu } from './shared-components/user-menu/user-menu';
 import ViewSwitch from './shared-components/view-switch';
@@ -19,9 +19,18 @@ import { WhatsNewDialog } from './shared-components/whats-new.dialog';
 import { DiscordIcon } from './shared-components/icons/discord.icon';
 import CampaignIcon from '@mui/icons-material/Campaign';
 import ListItemText from '@mui/material/ListItemText';
-import { inputSubMenu, learnSubMenu, menuItemById, MenuItemTP, miscMenuItems, planSubMenu } from './models/menu-items';
+import {
+    inputSubMenu,
+    learnSubMenu,
+    menuItemById,
+    MenuItemTP,
+    miscMenuItems,
+    planSubMenu,
+    planSubMenuWeb,
+} from './models/menu-items';
 import IconButton from '@mui/material/IconButton';
 import { FlexBox } from 'src/v2/components/flex-box';
+import { BmcIcon } from 'src/shared-components/icons/bmc.icon';
 
 const TopAppBar = () => {
     const isTabletOrMobile = useMediaQuery(isTabletOrMobileMediaQuery);
@@ -63,7 +72,7 @@ const TopAppBar = () => {
         <div style={{ display: 'flex', alignItems: 'center', marginInlineEnd: 20 }}>
             <AppBarSubMenu rootLabel={'Input'} options={inputSubMenu} />
 
-            <AppBarSubMenu rootLabel={'Plan'} options={planSubMenu} />
+            <AppBarSubMenu rootLabel={'Plan'} options={planSubMenuWeb} />
 
             <AppBarSubMenu rootLabel={'Learn'} options={learnSubMenu} />
         </div>
@@ -103,6 +112,13 @@ const TopAppBar = () => {
                 <ListItemText>Discord</ListItemText>
             </MenuItem>
 
+            <MenuItem component={Link} to={bmcLink} target={'_blank'} color="inherit">
+                <ListItemIcon>
+                    <BmcIcon />
+                </ListItemIcon>
+                <ListItemText>Buy me a trooper</ListItemText>
+            </MenuItem>
+
             {generateMenuItems([menuItemById.faq])}
 
             <Divider />
@@ -135,6 +151,16 @@ const TopAppBar = () => {
                     </FlexBox>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         {nav}
+                        <Tooltip title="Join Tacticus Planner community on Discord">
+                            <IconButton color="inherit" component={Link} to={discordInvitationLink} target={'_blank'}>
+                                <DiscordIcon />
+                            </IconButton>
+                        </Tooltip>
+                        <Tooltip title="Buy me a trooper">
+                            <IconButton color="inherit" component={Link} to={bmcLink} target={'_blank'}>
+                                <BmcIcon />
+                            </IconButton>
+                        </Tooltip>
                         <IconButton color="inherit" onClick={() => navigate('./faq')}>
                             <Tooltip title="Frequently Asked Questions">{menuItemById.faq.icon}</Tooltip>
                         </IconButton>

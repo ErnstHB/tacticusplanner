@@ -1,21 +1,23 @@
 ﻿import React, { useMemo, useState } from 'react';
-import { ICharacter2, IMaterialRecipeIngredientFull } from '../../models/interfaces';
+import { ICharacter2, IMaterialRecipeIngredientFull } from 'src/models/interfaces';
 import { FormControl, FormGroup, Grid, Input, MenuItem, Select } from '@mui/material';
-import { CharacterBias, Rank, Rarity, RarityStars } from '../../models/enums';
+import { CharacterBias, Rank, Rarity, RarityStars } from 'src/models/enums';
 import InputLabel from '@mui/material/InputLabel';
-import { getEnumValues, rankToString, rarityStarsToString } from '../../shared-logic/functions';
-import { RankImage } from '../../shared-components/rank-image';
-import { CharacterUpgrades } from '../../shared-components/character-upgrades';
-import { RarityImage } from '../../shared-components/rarity-image';
-import { StarsImage } from '../../shared-components/stars-image';
-import { rarityToMaxRank, rarityToMaxStars } from '../../models/constants';
+import { getEnumValues, rankToString, rarityStarsToString } from 'src/shared-logic/functions';
+import { RankImage } from 'src/shared-components/rank-image';
+import { CharacterUpgrades } from 'src/shared-components/character-upgrades';
+import { RarityImage } from 'src/shared-components/rarity-image';
+import { StarsImage } from 'src/shared-components/stars-image';
+import { rarityToMaxRank, rarityToMaxStars, rarityToStars } from 'src/models/constants';
 
 export const CharacterDetails = ({
     character,
     characterChanges,
+    updateInventoryChanges,
 }: {
     character: ICharacter2;
-    characterChanges: (character: ICharacter2, updateInventory: IMaterialRecipeIngredientFull[]) => void;
+    characterChanges: (character: ICharacter2) => void;
+    updateInventoryChanges: (updateInventory: IMaterialRecipeIngredientFull[]) => void;
 }) => {
     const [formData, setFormData] = useState({
         rank: character.rank,
@@ -34,21 +36,28 @@ export const CharacterDetails = ({
             ...formData,
             [name]: value,
         });
-        characterChanges({ ...character, [name]: saveValue ?? value }, []);
+        characterChanges({ ...character, [name]: saveValue ?? value });
     };
 
     const maxRank = useMemo(() => {
         return rarityToMaxRank[formData.rarity];
     }, [formData.rarity]);
 
+    const minStars = useMemo(() => {
+        return rarityToStars[formData.rarity];
+    }, [formData.rarity]);
+
     const maxStars = useMemo(() => {
         return rarityToMaxStars[formData.rarity];
     }, [formData.rarity]);
 
+    const starsEntries = useMemo(() => {
+        return getEnumValues(RarityStars).filter(x => x >= minStars && x <= maxStars);
+    }, [minStars, maxStars]);
+
     const rarityEntries: number[] = getEnumValues(Rarity);
     const rankEntries: number[] = getEnumValues(Rank).filter(x => x === formData.rank || x <= maxRank);
     const biasEntries: number[] = getEnumValues(CharacterBias);
-    const starsEntries: number[] = getEnumValues(RarityStars).filter(x => x === formData.stars || x <= maxStars);
 
     const getNativeSelectControl = (
         value: number,
@@ -112,7 +121,6 @@ export const CharacterDetails = ({
                     <FormControl variant={'outlined'} fullWidth>
                         <InputLabel>Shards</InputLabel>
                         <Input
-                            disableUnderline={true}
                             value={formData.shards}
                             onChange={event =>
                                 handleInputChange(
@@ -232,9 +240,12 @@ export const CharacterDetails = ({
                     </Grid>
 
                     <CharacterUpgrades
-                        character={character}
+                        characterName={character.name}
+                        upgrades={character.upgrades}
+                        rank={character.rank}
                         upgradesChanges={(upgrades, updateInventory) => {
-                            characterChanges({ ...character, upgrades: upgrades }, updateInventory);
+                            characterChanges({ ...character, upgrades: upgrades });
+                            updateInventoryChanges(updateInventory);
                         }}
                     />
                 </React.Fragment>

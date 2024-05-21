@@ -21,6 +21,8 @@ import { AxiosError } from 'axios';
 import { IErrorResponse } from '../api/api-interfaces';
 import { isEqual } from 'lodash';
 import { DispatchContext, StoreContext } from './store.provider';
+import { guildWarReducer } from 'src/reducers/guildWarReducer';
+import { guildReducer } from 'src/reducers/guildReducer';
 
 export const StoreProvider = ({ children }: React.PropsWithChildren) => {
     const { isAuthenticated, setUser, logout } = useAuth();
@@ -72,6 +74,8 @@ export const StoreProvider = ({ children }: React.PropsWithChildren) => {
 
     const [inventory, dispatchInventory] = React.useReducer(inventoryReducer, globalState.inventory);
     const [dailyRaids, dispatchDailyRaids] = React.useReducer(dailyRaidsReducer, globalState.dailyRaids);
+    const [guildWar, dispatchGuildWar] = React.useReducer(guildWarReducer, globalState.guildWar);
+    const [guild, dispatchGuild] = React.useReducer(guildReducer, globalState.guild);
 
     function wrapDispatch<T>(dispatch: React.Dispatch<T>): React.Dispatch<T> {
         return (action: T) => {
@@ -97,6 +101,8 @@ export const StoreProvider = ({ children }: React.PropsWithChildren) => {
             campaignsProgress: wrapDispatch(dispatchCampaignsProgress),
             inventory: wrapDispatch(dispatchInventory),
             dailyRaids: wrapDispatch(dispatchDailyRaids),
+            guildWar: wrapDispatch(dispatchGuildWar),
+            guild: wrapDispatch(dispatchGuild),
             setStore: (data: IGlobalState, modified: boolean, reset = false) => {
                 dispatchCharacters({ type: 'Set', value: data.characters });
                 dispatchGoals({ type: 'Set', value: data.goals });
@@ -110,6 +116,8 @@ export const StoreProvider = ({ children }: React.PropsWithChildren) => {
                 dispatchCampaignsProgress({ type: 'Set', value: data.campaignsProgress });
                 dispatchInventory({ type: 'Set', value: data.inventory });
                 dispatchDailyRaids({ type: 'Set', value: data.dailyRaids });
+                dispatchGuildWar({ type: 'Set', value: data.guildWar });
+                dispatchGuild({ type: 'Set', value: data.guild });
 
                 if (modified) {
                     setModified(true);
@@ -135,6 +143,8 @@ export const StoreProvider = ({ children }: React.PropsWithChildren) => {
             dispatchLeProgress,
             dispatchCampaignsProgress,
             dispatchDailyRaidsPreferences,
+            dispatchGuildWar,
+            dispatchGuild,
             setGlobalState,
         ]
     );
@@ -159,6 +169,8 @@ export const StoreProvider = ({ children }: React.PropsWithChildren) => {
             dailyRaidsPreferences,
             inventory,
             dailyRaids,
+            guildWar,
+            guild,
         };
         const storeValue = GlobalState.toStore(newValue);
 

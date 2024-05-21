@@ -1,5 +1,7 @@
 ﻿import {
     CharacterReleaseRarity,
+    DailyRaidsStrategy,
+    Difficulty,
     LegendaryEventEnum,
     PersonalGoalType,
     Rank,
@@ -13,6 +15,9 @@ import { RagnarLegendaryEvent } from './legendary-events/ragnar.le';
 import { VitruviusLegendaryEvent } from './legendary-events/vitruvius.le';
 import { CharactersFilterBy } from 'src/v2/features/characters/enums/characters-filter-by';
 import { CharactersOrderBy } from 'src/v2/features/characters/enums/characters-order-by';
+import { v4 } from 'uuid';
+import { GuildWarTeamType, IGWLayoutZone } from 'src/v2/features/guild-war/guild-war.models';
+import { KharnLegendaryEvent } from 'src/models/legendary-events/kharn.le';
 
 export const rarityStringToNumber: Record<RarityString, Rarity> = {
     [RarityString.Common]: Rarity.Common,
@@ -109,9 +114,9 @@ export const charsProgression: Record<number, ICharProgression> = {
     [Rarity.Epic + RarityStars.RedThreeStars]: { shards: 85 },
     [Rarity.Legendary + RarityStars.RedThreeStars]: { shards: 100, orbs: 10, rarity: Rarity.Legendary },
 
-    [Rarity.Legendary + RarityStars.RedFourStars]: { shards: 65, orbs: 10, rarity: Rarity.Legendary },
-    [Rarity.Legendary + RarityStars.RedFiveStars]: { shards: 85, orbs: 15, rarity: Rarity.Legendary },
-    [Rarity.Legendary + RarityStars.BlueStar]: { shards: 100, orbs: 15, rarity: Rarity.Legendary },
+    [Rarity.Legendary + RarityStars.RedFourStars]: { shards: 150, orbs: 10, rarity: Rarity.Legendary },
+    [Rarity.Legendary + RarityStars.RedFiveStars]: { shards: 250, orbs: 15, rarity: Rarity.Legendary },
+    [Rarity.Legendary + RarityStars.BlueStar]: { shards: 500, orbs: 20, rarity: Rarity.Legendary },
 };
 
 export const charsUnlockShards: Record<Rarity, number> = {
@@ -131,7 +136,6 @@ export const charsReleaseShards: Record<CharacterReleaseRarity, number> = {
     [CharacterReleaseRarity.Legendary]: 400,
 };
 
-export const defaultLE = LegendaryEventEnum.Shadowsun;
 export const getLegendaryEvent = (id: LegendaryEventEnum, characters: ICharacter2[]) => {
     switch (id) {
         case LegendaryEventEnum.Shadowsun:
@@ -142,6 +146,8 @@ export const getLegendaryEvent = (id: LegendaryEventEnum, characters: ICharacter
             return new RagnarLegendaryEvent(characters);
         case LegendaryEventEnum.Vitruvius:
             return new VitruviusLegendaryEvent(characters);
+        case LegendaryEventEnum.Kharn:
+            return new KharnLegendaryEvent(characters);
         default:
             return new ShadowSunLegendaryEvent(characters);
     }
@@ -151,7 +157,8 @@ export const isTabletOrMobileMediaQuery = '(max-width: 1000px)';
 export const pooEmoji = String.fromCodePoint(parseInt('1F4A9', 16));
 export const starEmoji = String.fromCodePoint(parseInt('1F31F', 16));
 
-export const discordInvitationLink = 'https://discord.gg/gyajsMcH7j';
+export const discordInvitationLink = 'https://discord.gg/8mcWKVAYZf';
+export const bmcLink = 'https://www.buymeacoffee.com/tacticusplanner';
 
 const defaultCampaignsProgress: ICampaignsProgress = {
     Indomitus: 75,
@@ -171,6 +178,7 @@ const defaultCampaignsProgress: ICampaignsProgress = {
 
     'Saim-Hann': 0,
     'Saim-Hann Mirror': 0,
+    'Saim-Hann Elite': 0,
 };
 
 export const fullCampaignsProgress: ICampaignsProgress = {
@@ -191,18 +199,46 @@ export const fullCampaignsProgress: ICampaignsProgress = {
 
     'Saim-Hann': 75,
     'Saim-Hann Mirror': 75,
+    'Saim-Hann Elite': 75,
 };
 
 export const campaignsNames: Array<keyof ICampaignsProgress> = Object.keys(defaultCampaignsProgress) as Array<
     keyof ICampaignsProgress
 >;
 
+export const defaultGWLayout: IGWLayoutZone[] = [
+    { id: 'medicaeStation', players: [] },
+    { id: 'headQuarters', players: [] },
+    { id: 'voxStation', players: [] },
+    { id: 'troopGarrison', players: [] },
+    { id: 'armoury', players: [] },
+    { id: 'troopGarrison', players: [] },
+    { id: 'artilleryPosition', players: [] },
+    { id: 'supplyDepot', players: [] },
+    { id: 'artilleryPosition', players: [] },
+    { id: 'fortifiedPosition', players: [] },
+    { id: 'antiAirBattery', players: [] },
+    { id: 'fortifiedPosition', players: [] },
+    { id: 'frontline', players: [] },
+    { id: 'frontline', players: [] },
+    { id: 'frontline', players: [] },
+];
+
 export const defaultData: IPersonalData2 = {
     schemaVersion: 2,
     modifiedDate: undefined,
     seenAppVersion: undefined,
     dailyRaids: {
-        completedLocations: [],
+        filters: {
+            enemiesAlliance: [],
+            enemiesFactions: [],
+            alliesAlliance: [],
+            alliesFactions: [],
+            campaignTypes: [],
+            upgradesRarity: [],
+            slotsCount: [],
+        },
+        raidedLocations: [],
         lastRefreshDateUTC: new Date().toUTCString(),
     },
     autoTeamsPreferences: {
@@ -225,16 +261,21 @@ export const defaultData: IPersonalData2 = {
         hideNames: false,
         wyoFilter: CharactersFilterBy.None,
         wyoOrder: CharactersOrderBy.Faction,
+        showBadges: true,
+        showAbilitiesLevel: true,
+        showBsValue: true,
+        showPower: true,
+        showCharacterLevel: true,
+        showCharacterRarity: true,
+        inventoryShowAlphabet: true,
+        inventoryShowPlusMinus: true,
+        goalsTableView: false,
     },
     dailyRaidsPreferences: {
         dailyEnergy: 288,
         shardsEnergy: 0,
-        useCampaignsProgress: true,
-        useMostEfficientNodes: true,
-        useMoreEfficientNodes: false,
-        useLeastEfficientNodes: false,
-        useInventory: true,
         farmByPriorityOrder: false,
+        farmStrategy: DailyRaidsStrategy.leastEnergy,
     },
     characters: [
         {
@@ -265,7 +306,6 @@ export const defaultData: IPersonalData2 = {
             type: PersonalGoalType.Ascend,
             targetRarity: Rarity.Rare,
             priority: 1,
-            upgrades: [],
             dailyRaids: true,
         },
         {
@@ -274,7 +314,6 @@ export const defaultData: IPersonalData2 = {
             type: PersonalGoalType.Ascend,
             targetRarity: Rarity.Rare,
             priority: 2,
-            upgrades: [],
             dailyRaids: true,
         },
         {
@@ -283,7 +322,6 @@ export const defaultData: IPersonalData2 = {
             type: PersonalGoalType.Ascend,
             targetRarity: Rarity.Rare,
             priority: 3,
-            upgrades: [],
             dailyRaids: true,
         },
         {
@@ -292,7 +330,6 @@ export const defaultData: IPersonalData2 = {
             type: PersonalGoalType.UpgradeRank,
             targetRank: Rank.Silver1,
             priority: 4,
-            upgrades: [],
             dailyRaids: true,
         },
         {
@@ -301,7 +338,6 @@ export const defaultData: IPersonalData2 = {
             type: PersonalGoalType.UpgradeRank,
             targetRank: Rank.Silver1,
             priority: 5,
-            upgrades: [],
             dailyRaids: true,
         },
         {
@@ -310,7 +346,6 @@ export const defaultData: IPersonalData2 = {
             type: PersonalGoalType.UpgradeRank,
             targetRank: Rank.Silver1,
             priority: 6,
-            upgrades: [],
             dailyRaids: true,
         },
     ],
@@ -324,6 +359,50 @@ export const defaultData: IPersonalData2 = {
     campaignsProgress: defaultCampaignsProgress,
     inventory: {
         upgrades: {},
+    },
+    guildWar: {
+        zoneDifficulty: Difficulty.Easy,
+        attackTokens: 10,
+        deployedCharacters: [],
+        layouts: [
+            {
+                id: v4(),
+                name: 'War zone 1',
+                bfLevel: 1,
+                zones: defaultGWLayout,
+            },
+            {
+                id: v4(),
+                name: 'War zone 2',
+                bfLevel: 3,
+                zones: defaultGWLayout,
+            },
+            {
+                id: v4(),
+                name: 'War zone 3',
+                bfLevel: 5,
+                zones: defaultGWLayout,
+            },
+        ],
+        teams: [
+            ...Array.from({ length: 5 }, (_, i) => ({
+                id: v4(),
+                name: `Team ${i + 1}`,
+                type: GuildWarTeamType.Defense,
+                rarityCap: Rarity.Legendary,
+                lineup: [],
+            })),
+            ...Array.from({ length: 10 }, (_, i) => ({
+                id: v4(),
+                name: `Team ${i + 1}`,
+                type: GuildWarTeamType.Offense,
+                rarityCap: Rarity.Legendary,
+                lineup: [],
+            })),
+        ],
+    },
+    guild: {
+        members: [],
     },
 };
 

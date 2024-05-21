@@ -171,3 +171,55 @@ code {
 .legendary-upgrade {
     border: 2px solid #cfe2f3;
 }
+
+.flex-box {
+    display: flex;
+    align-items: center;
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.start {
+        align-items: flex-start;
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+
+    &.between {
+        justify-content: space-between;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.full-width {
+        width: 100%;
+    }
+
+    @for $i from 1 through 20 {
+        &.gap#{$i} {
+            gap: #{$i}px;
+        }
+    }
+
+    @for $i from 1 through 10 {
+        &.p#{$i} {
+            padding: #{$i}px;
+        }
+    }
+}
+
+input.item-quantity-input::-webkit-outer-spin-button,
+input.item-quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input.item-quantity-input[type='number'] {
+    -moz-appearance: textfield;
+}
